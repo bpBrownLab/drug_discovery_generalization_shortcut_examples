@@ -1,0 +1,24 @@
+DTA comparison software
+Copyright 2026 Benjamin P. Brown
+
+The MIT license in ../LICENSE covers the standalone implementation. It does not
+license PDBbind, DUD-E, pretrained model weights, or other third-party material.
+
+DeepDTA architecture: Öztürk, H.; Özgür, A.; Ozkirimli, E. DeepDTA: deep
+drug-target binding affinity prediction. Bioinformatics 2018, 34, i821–i829.
+The convolutional implementation is independent and does not redistribute
+the unlicensed KSUN63 adaptation.
+
+Architecture details were also checked against the laboratory CADDCore
+implementation (Apache-2.0), which is not required or redistributed here.
+
+TransformerDTA downloads Rostlab/prot_bert and DeepChem/ChemBERTa-100M-MLM
+from their upstream providers at the revisions in checkpoints.json.
+The providers' licenses govern those downloads; model weights are not bundled.
+
+Pinned tokenizer and model configuration files from those same providers are
+included in tokenizers.zip alongside this file.
+They retain their upstream terms and are not covered by this package's MIT
+license. Sources:
+https://huggingface.co/Rostlab/prot_bert/tree/7a894481acdc12202f0a415dd567f6cfdb698908
+https://huggingface.co/DeepChem/ChemBERTa-100M-MLM/tree/f5c45f44d3061f0346888f5c09db17ec1146d29d

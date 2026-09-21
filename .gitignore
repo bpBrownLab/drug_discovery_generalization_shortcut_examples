@@ -1,0 +1,9 @@
+/outputs/
+/checkpoints/
+/checkpoints_*.tar
+/.venv*/
+*.pt
+__pycache__/
+*.pyc
+*.swp
+*.swo

@@ -1,0 +1,1602 @@
+[
+  {
+    "cath": "1.10.1300.10",
+    "development": "composite",
+    "model": "deepdta",
+    "checkpoint": "1.10.1300.10/deepdta/composite/best.pt",
+    "sha256": "d0c19e39405d16cf36d26d34ca8b6991a6e4544880cec7940f20dec9dd439c65",
+    "original_sha256": "d0c19e39405d16cf36d26d34ca8b6991a6e4544880cec7940f20dec9dd439c65",
+    "format": "full_state_dict",
+    "config": {
+      "pocket_length": 2000,
+      "smiles_length": 500,
+      "channel": 32,
+      "protein_kernel_sizes": [
+        4,
+        8,
+        12
+      ],
+      "ligand_kernel_sizes": [
+        4,
+        6,
+        8
+      ],
+      "fc_hidden_layers": [
+        1024,
+        1024,
+        512
+      ],
+      "prediction_head": "mlp"
+    },
+    "protein_vocab_sha256": "b7c5caaa0153115311bb345312097cbc92e473046ed24d63ec3bb0880c052829",
+    "ligand_vocab_sha256": "8dd89ede06ea93461b0c8437d073d56f206d4f158d7b412ed9c3dd9468c56aa7"
+  },
+  {
+    "cath": "1.10.1300.10",
+    "development": "random",
+    "model": "deepdta",
+    "checkpoint": "1.10.1300.10/deepdta/random/best.pt",
+    "sha256": "87f634bc753ece4e0563d22301f436ba8aaf5a1a3fc906bda514530a11085350",
+    "original_sha256": "87f634bc753ece4e0563d22301f436ba8aaf5a1a3fc906bda514530a11085350",
+    "format": "full_state_dict",
+    "config": {
+      "pocket_length": 2000,
+      "smiles_length": 500,
+      "channel": 32,
+      "protein_kernel_sizes": [
+        4,
+        8,
+        12
+      ],
+      "ligand_kernel_sizes": [
+        4,
+        6,
+        8
+      ],
+      "fc_hidden_layers": [
+        1024,
+        1024,
+        512
+      ],
+      "prediction_head": "mlp"
+    },
+    "protein_vocab_sha256": "b7c5caaa0153115311bb345312097cbc92e473046ed24d63ec3bb0880c052829",
+    "ligand_vocab_sha256": "8dd89ede06ea93461b0c8437d073d56f206d4f158d7b412ed9c3dd9468c56aa7"
+  },
+  {
+    "cath": "1.10.1300.10",
+    "development": "composite",
+    "model": "transformerdta",
+    "checkpoint": "1.10.1300.10/transformerdta/composite/best.pt",
+    "sha256": "3860fc68c243e9464d7222cf5a6026a0cf82ff09aa86c2c61a6ce029217e53b9",
+    "original_sha256": "a55e1c8fd1934363f821fb83598f97239f93ec551dfb26ad2022c5585931ca9e",
+    "frozen_encoders": {
+      "protein_bert": {
+        "name": "Rostlab/prot_bert",
+        "revision": "7a894481acdc12202f0a415dd567f6cfdb698908",
+        "tensor_sha256": "2969d067231f583f3d3d39cc4808e3818d5c215a7f576376439d4643b19dd8f8"
+      },
+      "ligand_bert": {
+        "name": "DeepChem/ChemBERTa-100M-MLM",
+        "revision": "f5c45f44d3061f0346888f5c09db17ec1146d29d",
+        "tensor_sha256": "f5ecb0daff5d494e1c008e6fa6999d3c4603c48b6ed50e2280254a4b785e07d9"
+      }
+    },
+    "format": "transformerdta_trainable_v1",
+    "config": {
+      "pocket_length": 2000,
+      "smiles_length": 500,
+      "prediction_head": "mlp",
+      "tokenizers": {
+        "protein_name": "Rostlab/prot_bert",
+        "protein_revision": "7a894481acdc12202f0a415dd567f6cfdb698908",
+        "ligand_name": "DeepChem/ChemBERTa-100M-MLM",
+        "ligand_revision": "f5c45f44d3061f0346888f5c09db17ec1146d29d"
+      }
+    },
+    "architecture": {
+      "cross_attention_mode": "bidirectional",
+      "protein_nhead": 4,
+      "ligand_nhead": 3,
+      "protein_encoder_layers": 2,
+      "ligand_encoder_layers": 2,
+      "num_cross_layers": 1,
+      "protein_dropout": 0.15,
+      "ligand_dropout": 0.15,
+      "cross_attention_dropout": 0.15,
+      "bidirectional_fusion_dropout": 0.15,
+      "freeze_protein_bert": true,
+      "freeze_ligand_bert": true,
+      "trim_protein_padding": true,
+      "pooling": "mean"
+    }
+  },
+  {
+    "cath": "1.10.1300.10",
+    "development": "random",
+    "model": "transformerdta",
+    "checkpoint": "1.10.1300.10/transformerdta/random/best.pt",
+    "sha256": "2d1fd63dedf1519ededec179ac807b29ab4bf77198f57d571a56e9f8df3e4667",
+    "original_sha256": "a2c7908ba3ac10ed1b7c208918b0fe5e362e10bfd45ba933fcec5354755452ea",
+    "frozen_encoders": {
+      "protein_bert": {
+        "name": "Rostlab/prot_bert",
+        "revision": "7a894481acdc12202f0a415dd567f6cfdb698908",
+        "tensor_sha256": "2969d067231f583f3d3d39cc4808e3818d5c215a7f576376439d4643b19dd8f8"
+      },
+      "ligand_bert": {
+        "name": "DeepChem/ChemBERTa-100M-MLM",
+        "revision": "f5c45f44d3061f0346888f5c09db17ec1146d29d",
+        "tensor_sha256": "f5ecb0daff5d494e1c008e6fa6999d3c4603c48b6ed50e2280254a4b785e07d9"
+      }
+    },
+    "format": "transformerdta_trainable_v1",
+    "config": {
+      "pocket_length": 2000,
+      "smiles_length": 500,
+      "prediction_head": "mlp",
+      "tokenizers": {
+        "protein_name": "Rostlab/prot_bert",
+        "protein_revision": "7a894481acdc12202f0a415dd567f6cfdb698908",
+        "ligand_name": "DeepChem/ChemBERTa-100M-MLM",
+        "ligand_revision": "f5c45f44d3061f0346888f5c09db17ec1146d29d"
+      }
+    },
+    "architecture": {
+      "cross_attention_mode": "bidirectional",
+      "protein_nhead": 4,
+      "ligand_nhead": 3,
+      "protein_encoder_layers": 2,
+      "ligand_encoder_layers": 2,
+      "num_cross_layers": 1,
+      "protein_dropout": 0.15,
+      "ligand_dropout": 0.15,
+      "cross_attention_dropout": 0.15,
+      "bidirectional_fusion_dropout": 0.15,
+      "freeze_protein_bert": true,
+      "freeze_ligand_bert": true,
+      "trim_protein_padding": true,
+      "pooling": "mean"
+    }
+  },
+  {
+    "cath": "1.10.510.10",
+    "development": "composite",
+    "model": "deepdta",
+    "checkpoint": "1.10.510.10/deepdta/composite/best.pt",
+    "sha256": "73ae812f8b5e4b8f75d0f708b4a63c987af56ae117ae832f37781af15ccf0685",
+    "original_sha256": "73ae812f8b5e4b8f75d0f708b4a63c987af56ae117ae832f37781af15ccf0685",
+    "format": "full_state_dict",
+    "config": {
+      "pocket_length": 2000,
+      "smiles_length": 500,
+      "channel": 32,
+      "protein_kernel_sizes": [
+        4,
+        8,
+        12
+      ],
+      "ligand_kernel_sizes": [
+        4,
+        6,
+        8
+      ],
+      "fc_hidden_layers": [
+        1024,
+        1024,
+        512
+      ],
+      "prediction_head": "mlp"
+    },
+    "protein_vocab_sha256": "b7c5caaa0153115311bb345312097cbc92e473046ed24d63ec3bb0880c052829",
+    "ligand_vocab_sha256": "8dd89ede06ea93461b0c8437d073d56f206d4f158d7b412ed9c3dd9468c56aa7"
+  },
+  {
+    "cath": "1.10.510.10",
+    "development": "random",
+    "model": "deepdta",
+    "checkpoint": "1.10.510.10/deepdta/random/best.pt",
+    "sha256": "fe3d4b5b6775b6ea1e79c0b4a04470830b1f2af89d8dbf559f2a2e855bd383ed",
+    "original_sha256": "fe3d4b5b6775b6ea1e79c0b4a04470830b1f2af89d8dbf559f2a2e855bd383ed",
+    "format": "full_state_dict",
+    "config": {
+      "pocket_length": 2000,
+      "smiles_length": 500,
+      "channel": 32,
+      "protein_kernel_sizes": [
+        4,
+        8,
+        12
+      ],
+      "ligand_kernel_sizes": [
+        4,
+        6,
+        8
+      ],
+      "fc_hidden_layers": [
+        1024,
+        1024,
+        512
+      ],
+      "prediction_head": "mlp"
+    },
+    "protein_vocab_sha256": "b7c5caaa0153115311bb345312097cbc92e473046ed24d63ec3bb0880c052829",
+    "ligand_vocab_sha256": "8dd89ede06ea93461b0c8437d073d56f206d4f158d7b412ed9c3dd9468c56aa7"
+  },
+  {
+    "cath": "1.10.510.10",
+    "development": "composite",
+    "model": "transformerdta",
+    "checkpoint": "1.10.510.10/transformerdta/composite/best.pt",
+    "sha256": "37c8171392367a794bc626c0b49c86677687c3cb454229148676e927ea78e98c",
+    "original_sha256": "d14a57d2a3c4fc43548748d71d3bee95fda0223f973ecc31b5d4b6a8a05b041a",
+    "frozen_encoders": {
+      "protein_bert": {
+        "name": "Rostlab/prot_bert",
+        "revision": "7a894481acdc12202f0a415dd567f6cfdb698908",
+        "tensor_sha256": "2969d067231f583f3d3d39cc4808e3818d5c215a7f576376439d4643b19dd8f8"
+      },
+      "ligand_bert": {
+        "name": "DeepChem/ChemBERTa-100M-MLM",
+        "revision": "f5c45f44d3061f0346888f5c09db17ec1146d29d",
+        "tensor_sha256": "f5ecb0daff5d494e1c008e6fa6999d3c4603c48b6ed50e2280254a4b785e07d9"
+      }
+    },
+    "format": "transformerdta_trainable_v1",
+    "config": {
+      "pocket_length": 2000,
+      "smiles_length": 500,
+      "prediction_head": "mlp",
+      "tokenizers": {
+        "protein_name": "Rostlab/prot_bert",
+        "protein_revision": "7a894481acdc12202f0a415dd567f6cfdb698908",
+        "ligand_name": "DeepChem/ChemBERTa-100M-MLM",
+        "ligand_revision": "f5c45f44d3061f0346888f5c09db17ec1146d29d"
+      }
+    },
+    "architecture": {
+      "cross_attention_mode": "bidirectional",
+      "protein_nhead": 4,
+      "ligand_nhead": 3,
+      "protein_encoder_layers": 2,
+      "ligand_encoder_layers": 2,
+      "num_cross_layers": 1,
+      "protein_dropout": 0.15,
+      "ligand_dropout": 0.15,
+      "cross_attention_dropout": 0.15,
+      "bidirectional_fusion_dropout": 0.15,
+      "freeze_protein_bert": true,
+      "freeze_ligand_bert": true,
+      "trim_protein_padding": true,
+      "pooling": "mean"
+    }
+  },
+  {
+    "cath": "1.10.510.10",
+    "development": "random",
+    "model": "transformerdta",
+    "checkpoint": "1.10.510.10/transformerdta/random/best.pt",
+    "sha256": "2ad17c9fb44c6a35b09b1d952dd602a2d54e4dbf72d420cd2dd7cbca59a6bf5f",
+    "original_sha256": "550f8e47b66ae46d90aeab5f0a5cd42a9f03268b24714930203f9ec78ad93d13",
+    "frozen_encoders": {
+      "protein_bert": {
+        "name": "Rostlab/prot_bert",
+        "revision": "7a894481acdc12202f0a415dd567f6cfdb698908",
+        "tensor_sha256": "2969d067231f583f3d3d39cc4808e3818d5c215a7f576376439d4643b19dd8f8"
+      },
+      "ligand_bert": {
+        "name": "DeepChem/ChemBERTa-100M-MLM",
+        "revision": "f5c45f44d3061f0346888f5c09db17ec1146d29d",
+        "tensor_sha256": "f5ecb0daff5d494e1c008e6fa6999d3c4603c48b6ed50e2280254a4b785e07d9"
+      }
+    },
+    "format": "transformerdta_trainable_v1",
+    "config": {
+      "pocket_length": 2000,
+      "smiles_length": 500,
+      "prediction_head": "mlp",
+      "tokenizers": {
+        "protein_name": "Rostlab/prot_bert",
+        "protein_revision": "7a894481acdc12202f0a415dd567f6cfdb698908",
+        "ligand_name": "DeepChem/ChemBERTa-100M-MLM",
+        "ligand_revision": "f5c45f44d3061f0346888f5c09db17ec1146d29d"
+      }
+    },
+    "architecture": {
+      "cross_attention_mode": "bidirectional",
+      "protein_nhead": 4,
+      "ligand_nhead": 3,
+      "protein_encoder_layers": 2,
+      "ligand_encoder_layers": 2,
+      "num_cross_layers": 1,
+      "protein_dropout": 0.15,
+      "ligand_dropout": 0.15,
+      "cross_attention_dropout": 0.15,
+      "bidirectional_fusion_dropout": 0.15,
+      "freeze_protein_bert": true,
+      "freeze_ligand_bert": true,
+      "trim_protein_padding": true,
+      "pooling": "mean"
+    }
+  },
+  {
+    "cath": "1.10.565.10",
+    "development": "composite",
+    "model": "deepdta",
+    "checkpoint": "1.10.565.10/deepdta/composite/best.pt",
+    "sha256": "f9d44108db4d6e31bda46452bfc7e66185dfa0c19b2c431684ae70b7c1f94601",
+    "original_sha256": "f9d44108db4d6e31bda46452bfc7e66185dfa0c19b2c431684ae70b7c1f94601",
+    "format": "full_state_dict",
+    "config": {
+      "pocket_length": 2000,
+      "smiles_length": 500,
+      "channel": 32,
+      "protein_kernel_sizes": [
+        4,
+        8,
+        12
+      ],
+      "ligand_kernel_sizes": [
+        4,
+        6,
+        8
+      ],
+      "fc_hidden_layers": [
+        1024,
+        1024,
+        512
+      ],
+      "prediction_head": "mlp"
+    },
+    "protein_vocab_sha256": "b7c5caaa0153115311bb345312097cbc92e473046ed24d63ec3bb0880c052829",
+    "ligand_vocab_sha256": "8dd89ede06ea93461b0c8437d073d56f206d4f158d7b412ed9c3dd9468c56aa7"
+  },
+  {
+    "cath": "1.10.565.10",
+    "development": "random",
+    "model": "deepdta",
+    "checkpoint": "1.10.565.10/deepdta/random/best.pt",
+    "sha256": "d530ade90d7032c73fa7eef33df19769ad5b26cc1cda0a8b01c4ba88e0388959",
+    "original_sha256": "d530ade90d7032c73fa7eef33df19769ad5b26cc1cda0a8b01c4ba88e0388959",
+    "format": "full_state_dict",
+    "config": {
+      "pocket_length": 2000,
+      "smiles_length": 500,
+      "channel": 32,
+      "protein_kernel_sizes": [
+        4,
+        8,
+        12
+      ],
+      "ligand_kernel_sizes": [
+        4,
+        6,
+        8
+      ],
+      "fc_hidden_layers": [
+        1024,
+        1024,
+        512
+      ],
+      "prediction_head": "mlp"
+    },
+    "protein_vocab_sha256": "b7c5caaa0153115311bb345312097cbc92e473046ed24d63ec3bb0880c052829",
+    "ligand_vocab_sha256": "8dd89ede06ea93461b0c8437d073d56f206d4f158d7b412ed9c3dd9468c56aa7"
+  },
+  {
+    "cath": "1.10.565.10",
+    "development": "composite",
+    "model": "transformerdta",
+    "checkpoint": "1.10.565.10/transformerdta/composite/best.pt",
+    "sha256": "4914d40f23a02e1aa4b67d4f63ad2ade8c24acd024a2329730e73b13e2e397cc",
+    "original_sha256": "542331eaaaf8b94c2d26ed3fa20e234a7ca3daeae2a89dd7d9fde6148a5a3c83",
+    "frozen_encoders": {
+      "protein_bert": {
+        "name": "Rostlab/prot_bert",
+        "revision": "7a894481acdc12202f0a415dd567f6cfdb698908",
+        "tensor_sha256": "2969d067231f583f3d3d39cc4808e3818d5c215a7f576376439d4643b19dd8f8"
+      },
+      "ligand_bert": {
+        "name": "DeepChem/ChemBERTa-100M-MLM",
+        "revision": "f5c45f44d3061f0346888f5c09db17ec1146d29d",
+        "tensor_sha256": "f5ecb0daff5d494e1c008e6fa6999d3c4603c48b6ed50e2280254a4b785e07d9"
+      }
+    },
+    "format": "transformerdta_trainable_v1",
+    "config": {
+      "pocket_length": 2000,
+      "smiles_length": 500,
+      "prediction_head": "mlp",
+      "tokenizers": {
+        "protein_name": "Rostlab/prot_bert",
+        "protein_revision": "7a894481acdc12202f0a415dd567f6cfdb698908",
+        "ligand_name": "DeepChem/ChemBERTa-100M-MLM",
+        "ligand_revision": "f5c45f44d3061f0346888f5c09db17ec1146d29d"
+      }
+    },
+    "architecture": {
+      "cross_attention_mode": "bidirectional",
+      "protein_nhead": 4,
+      "ligand_nhead": 3,
+      "protein_encoder_layers": 2,
+      "ligand_encoder_layers": 2,
+      "num_cross_layers": 1,
+      "protein_dropout": 0.15,
+      "ligand_dropout": 0.15,
+      "cross_attention_dropout": 0.15,
+      "bidirectional_fusion_dropout": 0.15,
+      "freeze_protein_bert": true,
+      "freeze_ligand_bert": true,
+      "trim_protein_padding": true,
+      "pooling": "mean"
+    }
+  },
+  {
+    "cath": "1.10.565.10",
+    "development": "random",
+    "model": "transformerdta",
+    "checkpoint": "1.10.565.10/transformerdta/random/best.pt",
+    "sha256": "82c26403e893fcd6f63651f25638ed7a4c8444cdbba7cce196103af028e5fd32",
+    "original_sha256": "1f2c351b4b952b845b3f20e8ac8aff74bf8b5648bc6a50602c34b8f01996d13a",
+    "frozen_encoders": {
+      "protein_bert": {
+        "name": "Rostlab/prot_bert",
+        "revision": "7a894481acdc12202f0a415dd567f6cfdb698908",
+        "tensor_sha256": "2969d067231f583f3d3d39cc4808e3818d5c215a7f576376439d4643b19dd8f8"
+      },
+      "ligand_bert": {
+        "name": "DeepChem/ChemBERTa-100M-MLM",
+        "revision": "f5c45f44d3061f0346888f5c09db17ec1146d29d",
+        "tensor_sha256": "f5ecb0daff5d494e1c008e6fa6999d3c4603c48b6ed50e2280254a4b785e07d9"
+      }
+    },
+    "format": "transformerdta_trainable_v1",
+    "config": {
+      "pocket_length": 2000,
+      "smiles_length": 500,
+      "prediction_head": "mlp",
+      "tokenizers": {
+        "protein_name": "Rostlab/prot_bert",
+        "protein_revision": "7a894481acdc12202f0a415dd567f6cfdb698908",
+        "ligand_name": "DeepChem/ChemBERTa-100M-MLM",
+        "ligand_revision": "f5c45f44d3061f0346888f5c09db17ec1146d29d"
+      }
+    },
+    "architecture": {
+      "cross_attention_mode": "bidirectional",
+      "protein_nhead": 4,
+      "ligand_nhead": 3,
+      "protein_encoder_layers": 2,
+      "ligand_encoder_layers": 2,
+      "num_cross_layers": 1,
+      "protein_dropout": 0.15,
+      "ligand_dropout": 0.15,
+      "cross_attention_dropout": 0.15,
+      "bidirectional_fusion_dropout": 0.15,
+      "freeze_protein_bert": true,
+      "freeze_ligand_bert": true,
+      "trim_protein_padding": true,
+      "pooling": "mean"
+    }
+  },
+  {
+    "cath": "1.20.920.10",
+    "development": "composite",
+    "model": "deepdta",
+    "checkpoint": "1.20.920.10/deepdta/composite/best.pt",
+    "sha256": "f77a43d54d1466e3a0eb017557ad66a9aac41b3616de8686f95e7680c938c934",
+    "original_sha256": "f77a43d54d1466e3a0eb017557ad66a9aac41b3616de8686f95e7680c938c934",
+    "format": "full_state_dict",
+    "config": {
+      "pocket_length": 2000,
+      "smiles_length": 500,
+      "channel": 32,
+      "protein_kernel_sizes": [
+        4,
+        8,
+        12
+      ],
+      "ligand_kernel_sizes": [
+        4,
+        6,
+        8
+      ],
+      "fc_hidden_layers": [
+        1024,
+        1024,
+        512
+      ],
+      "prediction_head": "mlp"
+    },
+    "protein_vocab_sha256": "b7c5caaa0153115311bb345312097cbc92e473046ed24d63ec3bb0880c052829",
+    "ligand_vocab_sha256": "8dd89ede06ea93461b0c8437d073d56f206d4f158d7b412ed9c3dd9468c56aa7"
+  },
+  {
+    "cath": "1.20.920.10",
+    "development": "random",
+    "model": "deepdta",
+    "checkpoint": "1.20.920.10/deepdta/random/best.pt",
+    "sha256": "beada6f3782a4068fc6c36c15fec985f1fc8e68e8a2f8c9a9aa31617cf00ff95",
+    "original_sha256": "beada6f3782a4068fc6c36c15fec985f1fc8e68e8a2f8c9a9aa31617cf00ff95",
+    "format": "full_state_dict",
+    "config": {
+      "pocket_length": 2000,
+      "smiles_length": 500,
+      "channel": 32,
+      "protein_kernel_sizes": [
+        4,
+        8,
+        12
+      ],
+      "ligand_kernel_sizes": [
+        4,
+        6,
+        8
+      ],
+      "fc_hidden_layers": [
+        1024,
+        1024,
+        512
+      ],
+      "prediction_head": "mlp"
+    },
+    "protein_vocab_sha256": "b7c5caaa0153115311bb345312097cbc92e473046ed24d63ec3bb0880c052829",
+    "ligand_vocab_sha256": "8dd89ede06ea93461b0c8437d073d56f206d4f158d7b412ed9c3dd9468c56aa7"
+  },
+  {
+    "cath": "1.20.920.10",
+    "development": "composite",
+    "model": "transformerdta",
+    "checkpoint": "1.20.920.10/transformerdta/composite/best.pt",
+    "sha256": "cba2b7271a53c5a626df3319319d8be4b0f701c5ac757ad3b7b2a33071000435",
+    "original_sha256": "f3070be36c273fc1a0cce018d8257b44798960dbc1cf72e72a0400fe5e5043b6",
+    "frozen_encoders": {
+      "protein_bert": {
+        "name": "Rostlab/prot_bert",
+        "revision": "7a894481acdc12202f0a415dd567f6cfdb698908",
+        "tensor_sha256": "2969d067231f583f3d3d39cc4808e3818d5c215a7f576376439d4643b19dd8f8"
+      },
+      "ligand_bert": {
+        "name": "DeepChem/ChemBERTa-100M-MLM",
+        "revision": "f5c45f44d3061f0346888f5c09db17ec1146d29d",
+        "tensor_sha256": "f5ecb0daff5d494e1c008e6fa6999d3c4603c48b6ed50e2280254a4b785e07d9"
+      }
+    },
+    "format": "transformerdta_trainable_v1",
+    "config": {
+      "pocket_length": 2000,
+      "smiles_length": 500,
+      "prediction_head": "mlp",
+      "tokenizers": {
+        "protein_name": "Rostlab/prot_bert",
+        "protein_revision": "7a894481acdc12202f0a415dd567f6cfdb698908",
+        "ligand_name": "DeepChem/ChemBERTa-100M-MLM",
+        "ligand_revision": "f5c45f44d3061f0346888f5c09db17ec1146d29d"
+      }
+    },
+    "architecture": {
+      "cross_attention_mode": "bidirectional",
+      "protein_nhead": 4,
+      "ligand_nhead": 3,
+      "protein_encoder_layers": 2,
+      "ligand_encoder_layers": 2,
+      "num_cross_layers": 1,
+      "protein_dropout": 0.15,
+      "ligand_dropout": 0.15,
+      "cross_attention_dropout": 0.15,
+      "bidirectional_fusion_dropout": 0.15,
+      "freeze_protein_bert": true,
+      "freeze_ligand_bert": true,
+      "trim_protein_padding": true,
+      "pooling": "mean"
+    }
+  },
+  {
+    "cath": "1.20.920.10",
+    "development": "random",
+    "model": "transformerdta",
+    "checkpoint": "1.20.920.10/transformerdta/random/best.pt",
+    "sha256": "312a714339fde069c361d4aed625b301faef621417a25efb49a490b9f3a8765e",
+    "original_sha256": "1a9d6d48d068237c427f30d8848cd60ef588ca41f9be6cb30cbdde7982ba3717",
+    "frozen_encoders": {
+      "protein_bert": {
+        "name": "Rostlab/prot_bert",
+        "revision": "7a894481acdc12202f0a415dd567f6cfdb698908",
+        "tensor_sha256": "2969d067231f583f3d3d39cc4808e3818d5c215a7f576376439d4643b19dd8f8"
+      },
+      "ligand_bert": {
+        "name": "DeepChem/ChemBERTa-100M-MLM",
+        "revision": "f5c45f44d3061f0346888f5c09db17ec1146d29d",
+        "tensor_sha256": "f5ecb0daff5d494e1c008e6fa6999d3c4603c48b6ed50e2280254a4b785e07d9"
+      }
+    },
+    "format": "transformerdta_trainable_v1",
+    "config": {
+      "pocket_length": 2000,
+      "smiles_length": 500,
+      "prediction_head": "mlp",
+      "tokenizers": {
+        "protein_name": "Rostlab/prot_bert",
+        "protein_revision": "7a894481acdc12202f0a415dd567f6cfdb698908",
+        "ligand_name": "DeepChem/ChemBERTa-100M-MLM",
+        "ligand_revision": "f5c45f44d3061f0346888f5c09db17ec1146d29d"
+      }
+    },
+    "architecture": {
+      "cross_attention_mode": "bidirectional",
+      "protein_nhead": 4,
+      "ligand_nhead": 3,
+      "protein_encoder_layers": 2,
+      "ligand_encoder_layers": 2,
+      "num_cross_layers": 1,
+      "protein_dropout": 0.15,
+      "ligand_dropout": 0.15,
+      "cross_attention_dropout": 0.15,
+      "bidirectional_fusion_dropout": 0.15,
+      "freeze_protein_bert": true,
+      "freeze_ligand_bert": true,
+      "trim_protein_padding": true,
+      "pooling": "mean"
+    }
+  },
+  {
+    "cath": "2.40.10.10",
+    "development": "composite",
+    "model": "deepdta",
+    "checkpoint": "2.40.10.10/deepdta/composite/best.pt",
+    "sha256": "c634418644205f5d7a215fbdce5b1139f79960a280b47c75affd2201b8ca1db5",
+    "original_sha256": "c634418644205f5d7a215fbdce5b1139f79960a280b47c75affd2201b8ca1db5",
+    "format": "full_state_dict",
+    "config": {
+      "pocket_length": 2000,
+      "smiles_length": 500,
+      "channel": 32,
+      "protein_kernel_sizes": [
+        4,
+        8,
+        12
+      ],
+      "ligand_kernel_sizes": [
+        4,
+        6,
+        8
+      ],
+      "fc_hidden_layers": [
+        1024,
+        1024,
+        512
+      ],
+      "prediction_head": "mlp"
+    },
+    "protein_vocab_sha256": "b7c5caaa0153115311bb345312097cbc92e473046ed24d63ec3bb0880c052829",
+    "ligand_vocab_sha256": "8dd89ede06ea93461b0c8437d073d56f206d4f158d7b412ed9c3dd9468c56aa7"
+  },
+  {
+    "cath": "2.40.10.10",
+    "development": "random",
+    "model": "deepdta",
+    "checkpoint": "2.40.10.10/deepdta/random/best.pt",
+    "sha256": "a86b1eda4f022bb4b65338a42fb9223603d477f9baeafbd5d7fcba82284e9fbd",
+    "original_sha256": "a86b1eda4f022bb4b65338a42fb9223603d477f9baeafbd5d7fcba82284e9fbd",
+    "format": "full_state_dict",
+    "config": {
+      "pocket_length": 2000,
+      "smiles_length": 500,
+      "channel": 32,
+      "protein_kernel_sizes": [
+        4,
+        8,
+        12
+      ],
+      "ligand_kernel_sizes": [
+        4,
+        6,
+        8
+      ],
+      "fc_hidden_layers": [
+        1024,
+        1024,
+        512
+      ],
+      "prediction_head": "mlp"
+    },
+    "protein_vocab_sha256": "b7c5caaa0153115311bb345312097cbc92e473046ed24d63ec3bb0880c052829",
+    "ligand_vocab_sha256": "8dd89ede06ea93461b0c8437d073d56f206d4f158d7b412ed9c3dd9468c56aa7"
+  },
+  {
+    "cath": "2.40.10.10",
+    "development": "composite",
+    "model": "transformerdta",
+    "checkpoint": "2.40.10.10/transformerdta/composite/best.pt",
+    "sha256": "b0b4ca37d8aed189bc29691eb1299a71841c03d5e96f852a6bfee381fbdc19f9",
+    "original_sha256": "f28a6798dda7f5ba14c6277e6ddc1a784950cc52f6533edd43498fd7650dfd8a",
+    "frozen_encoders": {
+      "protein_bert": {
+        "name": "Rostlab/prot_bert",
+        "revision": "7a894481acdc12202f0a415dd567f6cfdb698908",
+        "tensor_sha256": "2969d067231f583f3d3d39cc4808e3818d5c215a7f576376439d4643b19dd8f8"
+      },
+      "ligand_bert": {
+        "name": "DeepChem/ChemBERTa-100M-MLM",
+        "revision": "f5c45f44d3061f0346888f5c09db17ec1146d29d",
+        "tensor_sha256": "f5ecb0daff5d494e1c008e6fa6999d3c4603c48b6ed50e2280254a4b785e07d9"
+      }
+    },
+    "format": "transformerdta_trainable_v1",
+    "config": {
+      "pocket_length": 2000,
+      "smiles_length": 500,
+      "prediction_head": "mlp",
+      "tokenizers": {
+        "protein_name": "Rostlab/prot_bert",
+        "protein_revision": "7a894481acdc12202f0a415dd567f6cfdb698908",
+        "ligand_name": "DeepChem/ChemBERTa-100M-MLM",
+        "ligand_revision": "f5c45f44d3061f0346888f5c09db17ec1146d29d"
+      }
+    },
+    "architecture": {
+      "cross_attention_mode": "bidirectional",
+      "protein_nhead": 4,
+      "ligand_nhead": 3,
+      "protein_encoder_layers": 2,
+      "ligand_encoder_layers": 2,
+      "num_cross_layers": 1,
+      "protein_dropout": 0.15,
+      "ligand_dropout": 0.15,
+      "cross_attention_dropout": 0.15,
+      "bidirectional_fusion_dropout": 0.15,
+      "freeze_protein_bert": true,
+      "freeze_ligand_bert": true,
+      "trim_protein_padding": true,
+      "pooling": "mean"
+    }
+  },
+  {
+    "cath": "2.40.10.10",
+    "development": "random",
+    "model": "transformerdta",
+    "checkpoint": "2.40.10.10/transformerdta/random/best.pt",
+    "sha256": "e95553c0a0e171c251a72fb6c3e9158cc39f491da54de8ca745d04daf0bb9a6d",
+    "original_sha256": "612fc2701f5ad0895256bcd1112ebdbad14433eb8768ece2a4ea29dad027071d",
+    "frozen_encoders": {
+      "protein_bert": {
+        "name": "Rostlab/prot_bert",
+        "revision": "7a894481acdc12202f0a415dd567f6cfdb698908",
+        "tensor_sha256": "2969d067231f583f3d3d39cc4808e3818d5c215a7f576376439d4643b19dd8f8"
+      },
+      "ligand_bert": {
+        "name": "DeepChem/ChemBERTa-100M-MLM",
+        "revision": "f5c45f44d3061f0346888f5c09db17ec1146d29d",
+        "tensor_sha256": "f5ecb0daff5d494e1c008e6fa6999d3c4603c48b6ed50e2280254a4b785e07d9"
+      }
+    },
+    "format": "transformerdta_trainable_v1",
+    "config": {
+      "pocket_length": 2000,
+      "smiles_length": 500,
+      "prediction_head": "mlp",
+      "tokenizers": {
+        "protein_name": "Rostlab/prot_bert",
+        "protein_revision": "7a894481acdc12202f0a415dd567f6cfdb698908",
+        "ligand_name": "DeepChem/ChemBERTa-100M-MLM",
+        "ligand_revision": "f5c45f44d3061f0346888f5c09db17ec1146d29d"
+      }
+    },
+    "architecture": {
+      "cross_attention_mode": "bidirectional",
+      "protein_nhead": 4,
+      "ligand_nhead": 3,
+      "protein_encoder_layers": 2,
+      "ligand_encoder_layers": 2,
+      "num_cross_layers": 1,
+      "protein_dropout": 0.15,
+      "ligand_dropout": 0.15,
+      "cross_attention_dropout": 0.15,
+      "bidirectional_fusion_dropout": 0.15,
+      "freeze_protein_bert": true,
+      "freeze_ligand_bert": true,
+      "trim_protein_padding": true,
+      "pooling": "mean"
+    }
+  },
+  {
+    "cath": "2.40.70.10",
+    "development": "composite",
+    "model": "deepdta",
+    "checkpoint": "2.40.70.10/deepdta/composite/best.pt",
+    "sha256": "7b57978c5f69a4e5b82c3c2c9a6041a2e564dfd402e6343ce87dca5e4e8c5c51",
+    "original_sha256": "7b57978c5f69a4e5b82c3c2c9a6041a2e564dfd402e6343ce87dca5e4e8c5c51",
+    "format": "full_state_dict",
+    "config": {
+      "pocket_length": 2000,
+      "smiles_length": 500,
+      "channel": 32,
+      "protein_kernel_sizes": [
+        4,
+        8,
+        12
+      ],
+      "ligand_kernel_sizes": [
+        4,
+        6,
+        8
+      ],
+      "fc_hidden_layers": [
+        1024,
+        1024,
+        512
+      ],
+      "prediction_head": "mlp"
+    },
+    "protein_vocab_sha256": "b7c5caaa0153115311bb345312097cbc92e473046ed24d63ec3bb0880c052829",
+    "ligand_vocab_sha256": "8dd89ede06ea93461b0c8437d073d56f206d4f158d7b412ed9c3dd9468c56aa7"
+  },
+  {
+    "cath": "2.40.70.10",
+    "development": "random",
+    "model": "deepdta",
+    "checkpoint": "2.40.70.10/deepdta/random/best.pt",
+    "sha256": "538e5c802bd655ada6a9ea3f35008435864ab65ad5d853477c5bec6294938b68",
+    "original_sha256": "538e5c802bd655ada6a9ea3f35008435864ab65ad5d853477c5bec6294938b68",
+    "format": "full_state_dict",
+    "config": {
+      "pocket_length": 2000,
+      "smiles_length": 500,
+      "channel": 32,
+      "protein_kernel_sizes": [
+        4,
+        8,
+        12
+      ],
+      "ligand_kernel_sizes": [
+        4,
+        6,
+        8
+      ],
+      "fc_hidden_layers": [
+        1024,
+        1024,
+        512
+      ],
+      "prediction_head": "mlp"
+    },
+    "protein_vocab_sha256": "b7c5caaa0153115311bb345312097cbc92e473046ed24d63ec3bb0880c052829",
+    "ligand_vocab_sha256": "8dd89ede06ea93461b0c8437d073d56f206d4f158d7b412ed9c3dd9468c56aa7"
+  },
+  {
+    "cath": "2.40.70.10",
+    "development": "composite",
+    "model": "transformerdta",
+    "checkpoint": "2.40.70.10/transformerdta/composite/best.pt",
+    "sha256": "85fadec1d15dcb33d3a6387e5ea2f604068be6586712ebb26fb3bd4754e7134d",
+    "original_sha256": "228ab1e53b39699fd2f7f9781561213437e6a338f1cad7d2dd1ce3a59206556e",
+    "frozen_encoders": {
+      "protein_bert": {
+        "name": "Rostlab/prot_bert",
+        "revision": "7a894481acdc12202f0a415dd567f6cfdb698908",
+        "tensor_sha256": "2969d067231f583f3d3d39cc4808e3818d5c215a7f576376439d4643b19dd8f8"
+      },
+      "ligand_bert": {
+        "name": "DeepChem/ChemBERTa-100M-MLM",
+        "revision": "f5c45f44d3061f0346888f5c09db17ec1146d29d",
+        "tensor_sha256": "f5ecb0daff5d494e1c008e6fa6999d3c4603c48b6ed50e2280254a4b785e07d9"
+      }
+    },
+    "format": "transformerdta_trainable_v1",
+    "config": {
+      "pocket_length": 2000,
+      "smiles_length": 500,
+      "prediction_head": "mlp",
+      "tokenizers": {
+        "protein_name": "Rostlab/prot_bert",
+        "protein_revision": "7a894481acdc12202f0a415dd567f6cfdb698908",
+        "ligand_name": "DeepChem/ChemBERTa-100M-MLM",
+        "ligand_revision": "f5c45f44d3061f0346888f5c09db17ec1146d29d"
+      }
+    },
+    "architecture": {
+      "cross_attention_mode": "bidirectional",
+      "protein_nhead": 4,
+      "ligand_nhead": 3,
+      "protein_encoder_layers": 2,
+      "ligand_encoder_layers": 2,
+      "num_cross_layers": 1,
+      "protein_dropout": 0.15,
+      "ligand_dropout": 0.15,
+      "cross_attention_dropout": 0.15,
+      "bidirectional_fusion_dropout": 0.15,
+      "freeze_protein_bert": true,
+      "freeze_ligand_bert": true,
+      "trim_protein_padding": true,
+      "pooling": "mean"
+    }
+  },
+  {
+    "cath": "2.40.70.10",
+    "development": "random",
+    "model": "transformerdta",
+    "checkpoint": "2.40.70.10/transformerdta/random/best.pt",
+    "sha256": "f840765a9b4db23a51e1961b0007d68ed760c08a45fc177c64b2921f984f5485",
+    "original_sha256": "3439d5338e0f737c33a0e114b1c9ee0d7744ea2a0bef33ee8fc5a925ad6fcc09",
+    "frozen_encoders": {
+      "protein_bert": {
+        "name": "Rostlab/prot_bert",
+        "revision": "7a894481acdc12202f0a415dd567f6cfdb698908",
+        "tensor_sha256": "2969d067231f583f3d3d39cc4808e3818d5c215a7f576376439d4643b19dd8f8"
+      },
+      "ligand_bert": {
+        "name": "DeepChem/ChemBERTa-100M-MLM",
+        "revision": "f5c45f44d3061f0346888f5c09db17ec1146d29d",
+        "tensor_sha256": "f5ecb0daff5d494e1c008e6fa6999d3c4603c48b6ed50e2280254a4b785e07d9"
+      }
+    },
+    "format": "transformerdta_trainable_v1",
+    "config": {
+      "pocket_length": 2000,
+      "smiles_length": 500,
+      "prediction_head": "mlp",
+      "tokenizers": {
+        "protein_name": "Rostlab/prot_bert",
+        "protein_revision": "7a894481acdc12202f0a415dd567f6cfdb698908",
+        "ligand_name": "DeepChem/ChemBERTa-100M-MLM",
+        "ligand_revision": "f5c45f44d3061f0346888f5c09db17ec1146d29d"
+      }
+    },
+    "architecture": {
+      "cross_attention_mode": "bidirectional",
+      "protein_nhead": 4,
+      "ligand_nhead": 3,
+      "protein_encoder_layers": 2,
+      "ligand_encoder_layers": 2,
+      "num_cross_layers": 1,
+      "protein_dropout": 0.15,
+      "ligand_dropout": 0.15,
+      "cross_attention_dropout": 0.15,
+      "bidirectional_fusion_dropout": 0.15,
+      "freeze_protein_bert": true,
+      "freeze_ligand_bert": true,
+      "trim_protein_padding": true,
+      "pooling": "mean"
+    }
+  },
+  {
+    "cath": "2.60.40.10",
+    "development": "composite",
+    "model": "deepdta",
+    "checkpoint": "2.60.40.10/deepdta/composite/best.pt",
+    "sha256": "6f690d5e1e88a9b8213381e71a909fe11df9e45fff3d3d5c506ef4106e291bb3",
+    "original_sha256": "6f690d5e1e88a9b8213381e71a909fe11df9e45fff3d3d5c506ef4106e291bb3",
+    "format": "full_state_dict",
+    "config": {
+      "pocket_length": 2000,
+      "smiles_length": 500,
+      "channel": 32,
+      "protein_kernel_sizes": [
+        4,
+        8,
+        12
+      ],
+      "ligand_kernel_sizes": [
+        4,
+        6,
+        8
+      ],
+      "fc_hidden_layers": [
+        1024,
+        1024,
+        512
+      ],
+      "prediction_head": "mlp"
+    },
+    "protein_vocab_sha256": "b7c5caaa0153115311bb345312097cbc92e473046ed24d63ec3bb0880c052829",
+    "ligand_vocab_sha256": "8dd89ede06ea93461b0c8437d073d56f206d4f158d7b412ed9c3dd9468c56aa7"
+  },
+  {
+    "cath": "2.60.40.10",
+    "development": "random",
+    "model": "deepdta",
+    "checkpoint": "2.60.40.10/deepdta/random/best.pt",
+    "sha256": "ccaf4ba47758f8dfebb1aeb68bd69318f2ff7908fd3c4036ef6a868d2c7008d9",
+    "original_sha256": "ccaf4ba47758f8dfebb1aeb68bd69318f2ff7908fd3c4036ef6a868d2c7008d9",
+    "format": "full_state_dict",
+    "config": {
+      "pocket_length": 2000,
+      "smiles_length": 500,
+      "channel": 32,
+      "protein_kernel_sizes": [
+        4,
+        8,
+        12
+      ],
+      "ligand_kernel_sizes": [
+        4,
+        6,
+        8
+      ],
+      "fc_hidden_layers": [
+        1024,
+        1024,
+        512
+      ],
+      "prediction_head": "mlp"
+    },
+    "protein_vocab_sha256": "b7c5caaa0153115311bb345312097cbc92e473046ed24d63ec3bb0880c052829",
+    "ligand_vocab_sha256": "8dd89ede06ea93461b0c8437d073d56f206d4f158d7b412ed9c3dd9468c56aa7"
+  },
+  {
+    "cath": "2.60.40.10",
+    "development": "composite",
+    "model": "transformerdta",
+    "checkpoint": "2.60.40.10/transformerdta/composite/best.pt",
+    "sha256": "228bb675d88ab616e294f39e2f3a601deddc1dc532cd451674d2370e195c0275",
+    "original_sha256": "97d8b1b52738a109b1c12b08cba08df60ce8c9f002349260b9684fc2f509dcb5",
+    "frozen_encoders": {
+      "protein_bert": {
+        "name": "Rostlab/prot_bert",
+        "revision": "7a894481acdc12202f0a415dd567f6cfdb698908",
+        "tensor_sha256": "2969d067231f583f3d3d39cc4808e3818d5c215a7f576376439d4643b19dd8f8"
+      },
+      "ligand_bert": {
+        "name": "DeepChem/ChemBERTa-100M-MLM",
+        "revision": "f5c45f44d3061f0346888f5c09db17ec1146d29d",
+        "tensor_sha256": "f5ecb0daff5d494e1c008e6fa6999d3c4603c48b6ed50e2280254a4b785e07d9"
+      }
+    },
+    "format": "transformerdta_trainable_v1",
+    "config": {
+      "pocket_length": 2000,
+      "smiles_length": 500,
+      "prediction_head": "mlp",
+      "tokenizers": {
+        "protein_name": "Rostlab/prot_bert",
+        "protein_revision": "7a894481acdc12202f0a415dd567f6cfdb698908",
+        "ligand_name": "DeepChem/ChemBERTa-100M-MLM",
+        "ligand_revision": "f5c45f44d3061f0346888f5c09db17ec1146d29d"
+      }
+    },
+    "architecture": {
+      "cross_attention_mode": "bidirectional",
+      "protein_nhead": 4,
+      "ligand_nhead": 3,
+      "protein_encoder_layers": 2,
+      "ligand_encoder_layers": 2,
+      "num_cross_layers": 1,
+      "protein_dropout": 0.15,
+      "ligand_dropout": 0.15,
+      "cross_attention_dropout": 0.15,
+      "bidirectional_fusion_dropout": 0.15,
+      "freeze_protein_bert": true,
+      "freeze_ligand_bert": true,
+      "trim_protein_padding": true,
+      "pooling": "mean"
+    }
+  },
+  {
+    "cath": "2.60.40.10",
+    "development": "random",
+    "model": "transformerdta",
+    "checkpoint": "2.60.40.10/transformerdta/random/best.pt",
+    "sha256": "9517ef0c6eca1022c9b8c99a42d0c11436ab986b1f1b5a81bdcfd77d5687de7a",
+    "original_sha256": "0cc492115e2f7dc71adc02d70bb06248469828a4b87dc230f498d65e02d48d55",
+    "frozen_encoders": {
+      "protein_bert": {
+        "name": "Rostlab/prot_bert",
+        "revision": "7a894481acdc12202f0a415dd567f6cfdb698908",
+        "tensor_sha256": "2969d067231f583f3d3d39cc4808e3818d5c215a7f576376439d4643b19dd8f8"
+      },
+      "ligand_bert": {
+        "name": "DeepChem/ChemBERTa-100M-MLM",
+        "revision": "f5c45f44d3061f0346888f5c09db17ec1146d29d",
+        "tensor_sha256": "f5ecb0daff5d494e1c008e6fa6999d3c4603c48b6ed50e2280254a4b785e07d9"
+      }
+    },
+    "format": "transformerdta_trainable_v1",
+    "config": {
+      "pocket_length": 2000,
+      "smiles_length": 500,
+      "prediction_head": "mlp",
+      "tokenizers": {
+        "protein_name": "Rostlab/prot_bert",
+        "protein_revision": "7a894481acdc12202f0a415dd567f6cfdb698908",
+        "ligand_name": "DeepChem/ChemBERTa-100M-MLM",
+        "ligand_revision": "f5c45f44d3061f0346888f5c09db17ec1146d29d"
+      }
+    },
+    "architecture": {
+      "cross_attention_mode": "bidirectional",
+      "protein_nhead": 4,
+      "ligand_nhead": 3,
+      "protein_encoder_layers": 2,
+      "ligand_encoder_layers": 2,
+      "num_cross_layers": 1,
+      "protein_dropout": 0.15,
+      "ligand_dropout": 0.15,
+      "cross_attention_dropout": 0.15,
+      "bidirectional_fusion_dropout": 0.15,
+      "freeze_protein_bert": true,
+      "freeze_ligand_bert": true,
+      "trim_protein_padding": true,
+      "pooling": "mean"
+    }
+  },
+  {
+    "cath": "3.10.200.10",
+    "development": "composite",
+    "model": "deepdta",
+    "checkpoint": "3.10.200.10/deepdta/composite/best.pt",
+    "sha256": "485bf6f7a9a3c2552fd242cf4be3a39e9fb422101636c53c8d70fff930bc279e",
+    "original_sha256": "485bf6f7a9a3c2552fd242cf4be3a39e9fb422101636c53c8d70fff930bc279e",
+    "format": "full_state_dict",
+    "config": {
+      "pocket_length": 2000,
+      "smiles_length": 500,
+      "channel": 32,
+      "protein_kernel_sizes": [
+        4,
+        8,
+        12
+      ],
+      "ligand_kernel_sizes": [
+        4,
+        6,
+        8
+      ],
+      "fc_hidden_layers": [
+        1024,
+        1024,
+        512
+      ],
+      "prediction_head": "mlp"
+    },
+    "protein_vocab_sha256": "b7c5caaa0153115311bb345312097cbc92e473046ed24d63ec3bb0880c052829",
+    "ligand_vocab_sha256": "8dd89ede06ea93461b0c8437d073d56f206d4f158d7b412ed9c3dd9468c56aa7"
+  },
+  {
+    "cath": "3.10.200.10",
+    "development": "random",
+    "model": "deepdta",
+    "checkpoint": "3.10.200.10/deepdta/random/best.pt",
+    "sha256": "631fc6a167309caf9c230c8762cca30a67c9a5005b1dc2347c9a066a0bac44c6",
+    "original_sha256": "631fc6a167309caf9c230c8762cca30a67c9a5005b1dc2347c9a066a0bac44c6",
+    "format": "full_state_dict",
+    "config": {
+      "pocket_length": 2000,
+      "smiles_length": 500,
+      "channel": 32,
+      "protein_kernel_sizes": [
+        4,
+        8,
+        12
+      ],
+      "ligand_kernel_sizes": [
+        4,
+        6,
+        8
+      ],
+      "fc_hidden_layers": [
+        1024,
+        1024,
+        512
+      ],
+      "prediction_head": "mlp"
+    },
+    "protein_vocab_sha256": "b7c5caaa0153115311bb345312097cbc92e473046ed24d63ec3bb0880c052829",
+    "ligand_vocab_sha256": "8dd89ede06ea93461b0c8437d073d56f206d4f158d7b412ed9c3dd9468c56aa7"
+  },
+  {
+    "cath": "3.10.200.10",
+    "development": "composite",
+    "model": "transformerdta",
+    "checkpoint": "3.10.200.10/transformerdta/composite/best.pt",
+    "sha256": "17d261cd0267612258dc32d406b797ebd781f39c0af1898705f19cb3d07e89c5",
+    "original_sha256": "c59f3534e48b1ecfba640943437029c17c58f5cc457ae479b6ccf3906772bdaf",
+    "frozen_encoders": {
+      "protein_bert": {
+        "name": "Rostlab/prot_bert",
+        "revision": "7a894481acdc12202f0a415dd567f6cfdb698908",
+        "tensor_sha256": "2969d067231f583f3d3d39cc4808e3818d5c215a7f576376439d4643b19dd8f8"
+      },
+      "ligand_bert": {
+        "name": "DeepChem/ChemBERTa-100M-MLM",
+        "revision": "f5c45f44d3061f0346888f5c09db17ec1146d29d",
+        "tensor_sha256": "f5ecb0daff5d494e1c008e6fa6999d3c4603c48b6ed50e2280254a4b785e07d9"
+      }
+    },
+    "format": "transformerdta_trainable_v1",
+    "config": {
+      "pocket_length": 2000,
+      "smiles_length": 500,
+      "prediction_head": "mlp",
+      "tokenizers": {
+        "protein_name": "Rostlab/prot_bert",
+        "protein_revision": "7a894481acdc12202f0a415dd567f6cfdb698908",
+        "ligand_name": "DeepChem/ChemBERTa-100M-MLM",
+        "ligand_revision": "f5c45f44d3061f0346888f5c09db17ec1146d29d"
+      }
+    },
+    "architecture": {
+      "cross_attention_mode": "bidirectional",
+      "protein_nhead": 4,
+      "ligand_nhead": 3,
+      "protein_encoder_layers": 2,
+      "ligand_encoder_layers": 2,
+      "num_cross_layers": 1,
+      "protein_dropout": 0.15,
+      "ligand_dropout": 0.15,
+      "cross_attention_dropout": 0.15,
+      "bidirectional_fusion_dropout": 0.15,
+      "freeze_protein_bert": true,
+      "freeze_ligand_bert": true,
+      "trim_protein_padding": true,
+      "pooling": "mean"
+    }
+  },
+  {
+    "cath": "3.10.200.10",
+    "development": "random",
+    "model": "transformerdta",
+    "checkpoint": "3.10.200.10/transformerdta/random/best.pt",
+    "sha256": "f7e77dd414a92421c508a50637e959d46d66d2abf9f212f92b17e345ec319fe4",
+    "original_sha256": "866fd36cd94538d8ab953c675af14b0c1a3ead274e34c7ee79f372087c9fa364",
+    "frozen_encoders": {
+      "protein_bert": {
+        "name": "Rostlab/prot_bert",
+        "revision": "7a894481acdc12202f0a415dd567f6cfdb698908",
+        "tensor_sha256": "2969d067231f583f3d3d39cc4808e3818d5c215a7f576376439d4643b19dd8f8"
+      },
+      "ligand_bert": {
+        "name": "DeepChem/ChemBERTa-100M-MLM",
+        "revision": "f5c45f44d3061f0346888f5c09db17ec1146d29d",
+        "tensor_sha256": "f5ecb0daff5d494e1c008e6fa6999d3c4603c48b6ed50e2280254a4b785e07d9"
+      }
+    },
+    "format": "transformerdta_trainable_v1",
+    "config": {
+      "pocket_length": 2000,
+      "smiles_length": 500,
+      "prediction_head": "mlp",
+      "tokenizers": {
+        "protein_name": "Rostlab/prot_bert",
+        "protein_revision": "7a894481acdc12202f0a415dd567f6cfdb698908",
+        "ligand_name": "DeepChem/ChemBERTa-100M-MLM",
+        "ligand_revision": "f5c45f44d3061f0346888f5c09db17ec1146d29d"
+      }
+    },
+    "architecture": {
+      "cross_attention_mode": "bidirectional",
+      "protein_nhead": 4,
+      "ligand_nhead": 3,
+      "protein_encoder_layers": 2,
+      "ligand_encoder_layers": 2,
+      "num_cross_layers": 1,
+      "protein_dropout": 0.15,
+      "ligand_dropout": 0.15,
+      "cross_attention_dropout": 0.15,
+      "bidirectional_fusion_dropout": 0.15,
+      "freeze_protein_bert": true,
+      "freeze_ligand_bert": true,
+      "trim_protein_padding": true,
+      "pooling": "mean"
+    }
+  },
+  {
+    "cath": "3.30.565.10",
+    "development": "composite",
+    "model": "deepdta",
+    "checkpoint": "3.30.565.10/deepdta/composite/best.pt",
+    "sha256": "1b817009435af9b9aa420c629f59a8048a30446df511ab24fd729759c9e90586",
+    "original_sha256": "1b817009435af9b9aa420c629f59a8048a30446df511ab24fd729759c9e90586",
+    "format": "full_state_dict",
+    "config": {
+      "pocket_length": 2000,
+      "smiles_length": 500,
+      "channel": 32,
+      "protein_kernel_sizes": [
+        4,
+        8,
+        12
+      ],
+      "ligand_kernel_sizes": [
+        4,
+        6,
+        8
+      ],
+      "fc_hidden_layers": [
+        1024,
+        1024,
+        512
+      ],
+      "prediction_head": "mlp"
+    },
+    "protein_vocab_sha256": "b7c5caaa0153115311bb345312097cbc92e473046ed24d63ec3bb0880c052829",
+    "ligand_vocab_sha256": "8dd89ede06ea93461b0c8437d073d56f206d4f158d7b412ed9c3dd9468c56aa7"
+  },
+  {
+    "cath": "3.30.565.10",
+    "development": "random",
+    "model": "deepdta",
+    "checkpoint": "3.30.565.10/deepdta/random/best.pt",
+    "sha256": "3e961a019fe19accf180ca679a0c9d7c524b7c91b364e1eb056d15e8d8382878",
+    "original_sha256": "3e961a019fe19accf180ca679a0c9d7c524b7c91b364e1eb056d15e8d8382878",
+    "format": "full_state_dict",
+    "config": {
+      "pocket_length": 2000,
+      "smiles_length": 500,
+      "channel": 32,
+      "protein_kernel_sizes": [
+        4,
+        8,
+        12
+      ],
+      "ligand_kernel_sizes": [
+        4,
+        6,
+        8
+      ],
+      "fc_hidden_layers": [
+        1024,
+        1024,
+        512
+      ],
+      "prediction_head": "mlp"
+    },
+    "protein_vocab_sha256": "b7c5caaa0153115311bb345312097cbc92e473046ed24d63ec3bb0880c052829",
+    "ligand_vocab_sha256": "8dd89ede06ea93461b0c8437d073d56f206d4f158d7b412ed9c3dd9468c56aa7"
+  },
+  {
+    "cath": "3.30.565.10",
+    "development": "composite",
+    "model": "transformerdta",
+    "checkpoint": "3.30.565.10/transformerdta/composite/best.pt",
+    "sha256": "30d109aa51065a249b9ebf82bcb16796c84c97588846af2c34e99c27f7fa59e9",
+    "original_sha256": "6c406f5c5be009f59d2bcdbfd643c117861077a113bf0a1e83e3f7a5fe1e4d04",
+    "frozen_encoders": {
+      "protein_bert": {
+        "name": "Rostlab/prot_bert",
+        "revision": "7a894481acdc12202f0a415dd567f6cfdb698908",
+        "tensor_sha256": "2969d067231f583f3d3d39cc4808e3818d5c215a7f576376439d4643b19dd8f8"
+      },
+      "ligand_bert": {
+        "name": "DeepChem/ChemBERTa-100M-MLM",
+        "revision": "f5c45f44d3061f0346888f5c09db17ec1146d29d",
+        "tensor_sha256": "f5ecb0daff5d494e1c008e6fa6999d3c4603c48b6ed50e2280254a4b785e07d9"
+      }
+    },
+    "format": "transformerdta_trainable_v1",
+    "config": {
+      "pocket_length": 2000,
+      "smiles_length": 500,
+      "prediction_head": "mlp",
+      "tokenizers": {
+        "protein_name": "Rostlab/prot_bert",
+        "protein_revision": "7a894481acdc12202f0a415dd567f6cfdb698908",
+        "ligand_name": "DeepChem/ChemBERTa-100M-MLM",
+        "ligand_revision": "f5c45f44d3061f0346888f5c09db17ec1146d29d"
+      }
+    },
+    "architecture": {
+      "cross_attention_mode": "bidirectional",
+      "protein_nhead": 4,
+      "ligand_nhead": 3,
+      "protein_encoder_layers": 2,
+      "ligand_encoder_layers": 2,
+      "num_cross_layers": 1,
+      "protein_dropout": 0.15,
+      "ligand_dropout": 0.15,
+      "cross_attention_dropout": 0.15,
+      "bidirectional_fusion_dropout": 0.15,
+      "freeze_protein_bert": true,
+      "freeze_ligand_bert": true,
+      "trim_protein_padding": true,
+      "pooling": "mean"
+    }
+  },
+  {
+    "cath": "3.30.565.10",
+    "development": "random",
+    "model": "transformerdta",
+    "checkpoint": "3.30.565.10/transformerdta/random/best.pt",
+    "sha256": "1886ba755efc269663b18f1c62b3e460268f8f60b16675ee5d7b400a25a281c8",
+    "original_sha256": "48c3321c5c5f10295be29599f3a609d585ff0ab8a49ed5f8e05ededd02efbcb9",
+    "frozen_encoders": {
+      "protein_bert": {
+        "name": "Rostlab/prot_bert",
+        "revision": "7a894481acdc12202f0a415dd567f6cfdb698908",
+        "tensor_sha256": "2969d067231f583f3d3d39cc4808e3818d5c215a7f576376439d4643b19dd8f8"
+      },
+      "ligand_bert": {
+        "name": "DeepChem/ChemBERTa-100M-MLM",
+        "revision": "f5c45f44d3061f0346888f5c09db17ec1146d29d",
+        "tensor_sha256": "f5ecb0daff5d494e1c008e6fa6999d3c4603c48b6ed50e2280254a4b785e07d9"
+      }
+    },
+    "format": "transformerdta_trainable_v1",
+    "config": {
+      "pocket_length": 2000,
+      "smiles_length": 500,
+      "prediction_head": "mlp",
+      "tokenizers": {
+        "protein_name": "Rostlab/prot_bert",
+        "protein_revision": "7a894481acdc12202f0a415dd567f6cfdb698908",
+        "ligand_name": "DeepChem/ChemBERTa-100M-MLM",
+        "ligand_revision": "f5c45f44d3061f0346888f5c09db17ec1146d29d"
+      }
+    },
+    "architecture": {
+      "cross_attention_mode": "bidirectional",
+      "protein_nhead": 4,
+      "ligand_nhead": 3,
+      "protein_encoder_layers": 2,
+      "ligand_encoder_layers": 2,
+      "num_cross_layers": 1,
+      "protein_dropout": 0.15,
+      "ligand_dropout": 0.15,
+      "cross_attention_dropout": 0.15,
+      "bidirectional_fusion_dropout": 0.15,
+      "freeze_protein_bert": true,
+      "freeze_ligand_bert": true,
+      "trim_protein_padding": true,
+      "pooling": "mean"
+    }
+  },
+  {
+    "cath": "3.40.190.10",
+    "development": "composite",
+    "model": "deepdta",
+    "checkpoint": "3.40.190.10/deepdta/composite/best.pt",
+    "sha256": "0c03a835af21ed4fe4cb2406dd0244407509ee9c1f2b4386a6ab5be4e66b24e7",
+    "original_sha256": "0c03a835af21ed4fe4cb2406dd0244407509ee9c1f2b4386a6ab5be4e66b24e7",
+    "format": "full_state_dict",
+    "config": {
+      "pocket_length": 2000,
+      "smiles_length": 500,
+      "channel": 32,
+      "protein_kernel_sizes": [
+        4,
+        8,
+        12
+      ],
+      "ligand_kernel_sizes": [
+        4,
+        6,
+        8
+      ],
+      "fc_hidden_layers": [
+        1024,
+        1024,
+        512
+      ],
+      "prediction_head": "mlp"
+    },
+    "protein_vocab_sha256": "b7c5caaa0153115311bb345312097cbc92e473046ed24d63ec3bb0880c052829",
+    "ligand_vocab_sha256": "8dd89ede06ea93461b0c8437d073d56f206d4f158d7b412ed9c3dd9468c56aa7"
+  },
+  {
+    "cath": "3.40.190.10",
+    "development": "random",
+    "model": "deepdta",
+    "checkpoint": "3.40.190.10/deepdta/random/best.pt",
+    "sha256": "cbf8c794a0920019a1ccfd069599b6eede308f7db254cb76bebe5959071c39e0",
+    "original_sha256": "cbf8c794a0920019a1ccfd069599b6eede308f7db254cb76bebe5959071c39e0",
+    "format": "full_state_dict",
+    "config": {
+      "pocket_length": 2000,
+      "smiles_length": 500,
+      "channel": 32,
+      "protein_kernel_sizes": [
+        4,
+        8,
+        12
+      ],
+      "ligand_kernel_sizes": [
+        4,
+        6,
+        8
+      ],
+      "fc_hidden_layers": [
+        1024,
+        1024,
+        512
+      ],
+      "prediction_head": "mlp"
+    },
+    "protein_vocab_sha256": "b7c5caaa0153115311bb345312097cbc92e473046ed24d63ec3bb0880c052829",
+    "ligand_vocab_sha256": "8dd89ede06ea93461b0c8437d073d56f206d4f158d7b412ed9c3dd9468c56aa7"
+  },
+  {
+    "cath": "3.40.190.10",
+    "development": "composite",
+    "model": "transformerdta",
+    "checkpoint": "3.40.190.10/transformerdta/composite/best.pt",
+    "sha256": "3fe6734785a1ae0b4323aa44aab2b321de30b940a35e5b4d6500d963a7675d85",
+    "original_sha256": "7f26f8c9e85440a2ffec5380c4b8a6083064e9e4312266bc625f4cea7a65b3d6",
+    "frozen_encoders": {
+      "protein_bert": {
+        "name": "Rostlab/prot_bert",
+        "revision": "7a894481acdc12202f0a415dd567f6cfdb698908",
+        "tensor_sha256": "2969d067231f583f3d3d39cc4808e3818d5c215a7f576376439d4643b19dd8f8"
+      },
+      "ligand_bert": {
+        "name": "DeepChem/ChemBERTa-100M-MLM",
+        "revision": "f5c45f44d3061f0346888f5c09db17ec1146d29d",
+        "tensor_sha256": "f5ecb0daff5d494e1c008e6fa6999d3c4603c48b6ed50e2280254a4b785e07d9"
+      }
+    },
+    "format": "transformerdta_trainable_v1",
+    "config": {
+      "pocket_length": 2000,
+      "smiles_length": 500,
+      "prediction_head": "mlp",
+      "tokenizers": {
+        "protein_name": "Rostlab/prot_bert",
+        "protein_revision": "7a894481acdc12202f0a415dd567f6cfdb698908",
+        "ligand_name": "DeepChem/ChemBERTa-100M-MLM",
+        "ligand_revision": "f5c45f44d3061f0346888f5c09db17ec1146d29d"
+      }
+    },
+    "architecture": {
+      "cross_attention_mode": "bidirectional",
+      "protein_nhead": 4,
+      "ligand_nhead": 3,
+      "protein_encoder_layers": 2,
+      "ligand_encoder_layers": 2,
+      "num_cross_layers": 1,
+      "protein_dropout": 0.15,
+      "ligand_dropout": 0.15,
+      "cross_attention_dropout": 0.15,
+      "bidirectional_fusion_dropout": 0.15,
+      "freeze_protein_bert": true,
+      "freeze_ligand_bert": true,
+      "trim_protein_padding": true,
+      "pooling": "mean"
+    }
+  },
+  {
+    "cath": "3.40.190.10",
+    "development": "random",
+    "model": "transformerdta",
+    "checkpoint": "3.40.190.10/transformerdta/random/best.pt",
+    "sha256": "7de9e3bb03042b05ff20ef211ce5448618136729b5e595b5532a3f3c3dfe17c8",
+    "original_sha256": "604fc767673a584a15503e33dd8bdddbd32875513b5fe71f196150152a8b8b62",
+    "frozen_encoders": {
+      "protein_bert": {
+        "name": "Rostlab/prot_bert",
+        "revision": "7a894481acdc12202f0a415dd567f6cfdb698908",
+        "tensor_sha256": "2969d067231f583f3d3d39cc4808e3818d5c215a7f576376439d4643b19dd8f8"
+      },
+      "ligand_bert": {
+        "name": "DeepChem/ChemBERTa-100M-MLM",
+        "revision": "f5c45f44d3061f0346888f5c09db17ec1146d29d",
+        "tensor_sha256": "f5ecb0daff5d494e1c008e6fa6999d3c4603c48b6ed50e2280254a4b785e07d9"
+      }
+    },
+    "format": "transformerdta_trainable_v1",
+    "config": {
+      "pocket_length": 2000,
+      "smiles_length": 500,
+      "prediction_head": "mlp",
+      "tokenizers": {
+        "protein_name": "Rostlab/prot_bert",
+        "protein_revision": "7a894481acdc12202f0a415dd567f6cfdb698908",
+        "ligand_name": "DeepChem/ChemBERTa-100M-MLM",
+        "ligand_revision": "f5c45f44d3061f0346888f5c09db17ec1146d29d"
+      }
+    },
+    "architecture": {
+      "cross_attention_mode": "bidirectional",
+      "protein_nhead": 4,
+      "ligand_nhead": 3,
+      "protein_encoder_layers": 2,
+      "ligand_encoder_layers": 2,
+      "num_cross_layers": 1,
+      "protein_dropout": 0.15,
+      "ligand_dropout": 0.15,
+      "cross_attention_dropout": 0.15,
+      "bidirectional_fusion_dropout": 0.15,
+      "freeze_protein_bert": true,
+      "freeze_ligand_bert": true,
+      "trim_protein_padding": true,
+      "pooling": "mean"
+    }
+  }
+]

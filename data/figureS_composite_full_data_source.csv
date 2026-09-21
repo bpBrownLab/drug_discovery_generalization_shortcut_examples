@@ -1,0 +1,321 @@
+cath,model,development,evaluation,threshold,n,value,extended_panel,configuration,cohort,operation,method,panel,figure_role
+1.10.510.10,deepdta,composite,validation,Weak+,16433,0.941255882146,D,original,full,Original published evaluation,,A,SI
+1.10.565.10,deepdta,composite,validation,Weak+,20827,0.950722222574,D,original,full,Original published evaluation,,A,SI
+1.10.1300.10,deepdta,composite,validation,Weak+,21895,0.94194414582,D,original,full,Original published evaluation,,A,SI
+1.20.920.10,deepdta,composite,validation,Weak+,21185,0.957482661702,D,original,full,Original published evaluation,,A,SI
+2.40.10.10,deepdta,composite,validation,Weak+,20971,0.951373241158,D,original,full,Original published evaluation,,A,SI
+2.40.70.10,deepdta,composite,validation,Weak+,20070,0.945517074377,D,original,full,Original published evaluation,,A,SI
+2.60.40.10,deepdta,composite,validation,Weak+,21211,0.948845198533,D,original,full,Original published evaluation,,A,SI
+3.10.200.10,deepdta,composite,validation,Weak+,16332,0.935536869131,D,original,full,Original published evaluation,,A,SI
+3.30.565.10,deepdta,composite,validation,Weak+,21557,0.947878966578,D,original,full,Original published evaluation,,A,SI
+3.40.190.10,deepdta,composite,validation,Weak+,21811,0.943730537335,D,original,full,Original published evaluation,,A,SI
+1.10.510.10,deepdta,composite,cath_lso_test,Weak+,109519,0.654933162047,D,original,full,Original published evaluation,,A,SI
+1.10.565.10,deepdta,composite,cath_lso_test,Weak+,22467,0.644164639149,D,original,full,Original published evaluation,,A,SI
+1.10.1300.10,deepdta,composite,cath_lso_test,Weak+,1108,0.761640311245,D,original,full,Original published evaluation,,A,SI
+1.20.920.10,deepdta,composite,cath_lso_test,Weak+,13728,0.648471959813,D,original,full,Original published evaluation,,A,SI
+2.40.10.10,deepdta,composite,cath_lso_test,Weak+,18140,0.682561069727,D,original,full,Original published evaluation,,A,SI
+2.40.70.10,deepdta,composite,cath_lso_test,Weak+,36510,0.757027647533,D,original,full,Original published evaluation,,A,SI
+2.60.40.10,deepdta,composite,cath_lso_test,Weak+,14709,0.648945579774,D,original,full,Original published evaluation,,A,SI
+3.10.200.10,deepdta,composite,cath_lso_test,Weak+,95479,0.628315140114,D,original,full,Original published evaluation,,A,SI
+3.30.565.10,deepdta,composite,cath_lso_test,Weak+,7882,0.643909118187,D,original,full,Original published evaluation,,A,SI
+3.40.190.10,deepdta,composite,cath_lso_test,Weak+,2657,0.508856832414,D,original,full,Original published evaluation,,A,SI
+1.10.510.10,deepdta,composite,validation,High,16433,0.936571943393,D,original,full,Original published evaluation,,A,SI
+1.10.565.10,deepdta,composite,validation,High,20827,0.941186846637,D,original,full,Original published evaluation,,A,SI
+1.10.1300.10,deepdta,composite,validation,High,21895,0.930401286452,D,original,full,Original published evaluation,,A,SI
+1.20.920.10,deepdta,composite,validation,High,21185,0.938218183995,D,original,full,Original published evaluation,,A,SI
+2.40.10.10,deepdta,composite,validation,High,20971,0.933222921754,D,original,full,Original published evaluation,,A,SI
+2.40.70.10,deepdta,composite,validation,High,20070,0.929632344085,D,original,full,Original published evaluation,,A,SI
+2.60.40.10,deepdta,composite,validation,High,21211,0.933988287691,D,original,full,Original published evaluation,,A,SI
+3.10.200.10,deepdta,composite,validation,High,16332,0.923735933342,D,original,full,Original published evaluation,,A,SI
+3.30.565.10,deepdta,composite,validation,High,21557,0.94036247309,D,original,full,Original published evaluation,,A,SI
+3.40.190.10,deepdta,composite,validation,High,21811,0.922961989398,D,original,full,Original published evaluation,,A,SI
+1.10.510.10,deepdta,composite,cath_lso_test,High,109519,0.601555734028,D,original,full,Original published evaluation,,A,SI
+1.10.565.10,deepdta,composite,cath_lso_test,High,22467,0.571403484684,D,original,full,Original published evaluation,,A,SI
+1.10.1300.10,deepdta,composite,cath_lso_test,High,1108,0.610760681835,D,original,full,Original published evaluation,,A,SI
+1.20.920.10,deepdta,composite,cath_lso_test,High,13728,0.641943124683,D,original,full,Original published evaluation,,A,SI
+2.40.10.10,deepdta,composite,cath_lso_test,High,18140,0.641731253447,D,original,full,Original published evaluation,,A,SI
+2.40.70.10,deepdta,composite,cath_lso_test,High,36510,0.626483910262,D,original,full,Original published evaluation,,A,SI
+2.60.40.10,deepdta,composite,cath_lso_test,High,14709,0.547320840342,D,original,full,Original published evaluation,,A,SI
+3.10.200.10,deepdta,composite,cath_lso_test,High,95479,0.551585568943,D,original,full,Original published evaluation,,A,SI
+3.30.565.10,deepdta,composite,cath_lso_test,High,7882,0.522465323573,D,original,full,Original published evaluation,,A,SI
+3.40.190.10,deepdta,composite,cath_lso_test,High,2657,0.591974531406,D,original,full,Original published evaluation,,A,SI
+1.10.510.10,transformerdta,composite,validation,Weak+,16433,0.965197553946,E,original,full,Original published evaluation,,B,SI
+1.10.565.10,transformerdta,composite,validation,Weak+,20827,0.971674313082,E,original,full,Original published evaluation,,B,SI
+1.10.1300.10,transformerdta,composite,validation,Weak+,21895,0.973328462572,E,original,full,Original published evaluation,,B,SI
+1.20.920.10,transformerdta,composite,validation,Weak+,21185,0.970383158125,E,original,full,Original published evaluation,,B,SI
+2.40.10.10,transformerdta,composite,validation,Weak+,20971,0.970241734064,E,original,full,Original published evaluation,,B,SI
+2.40.70.10,transformerdta,composite,validation,Weak+,20070,0.968022481076,E,original,full,Original published evaluation,,B,SI
+2.60.40.10,transformerdta,composite,validation,Weak+,21211,0.969273375363,E,original,full,Original published evaluation,,B,SI
+3.10.200.10,transformerdta,composite,validation,Weak+,16332,0.960481001536,E,original,full,Original published evaluation,,B,SI
+3.30.565.10,transformerdta,composite,validation,Weak+,21557,0.964718344514,E,original,full,Original published evaluation,,B,SI
+3.40.190.10,transformerdta,composite,validation,Weak+,21811,0.969682291631,E,original,full,Original published evaluation,,B,SI
+1.10.510.10,transformerdta,composite,cath_lso_test,Weak+,109519,0.654949951291,E,original,full,Original published evaluation,,B,SI
+1.10.565.10,transformerdta,composite,cath_lso_test,Weak+,22467,0.680167630273,E,original,full,Original published evaluation,,B,SI
+1.10.1300.10,transformerdta,composite,cath_lso_test,Weak+,1108,0.57529224039,E,original,full,Original published evaluation,,B,SI
+1.20.920.10,transformerdta,composite,cath_lso_test,Weak+,13728,0.656537590996,E,original,full,Original published evaluation,,B,SI
+2.40.10.10,transformerdta,composite,cath_lso_test,Weak+,18140,0.714306811129,E,original,full,Original published evaluation,,B,SI
+2.40.70.10,transformerdta,composite,cath_lso_test,Weak+,36510,0.713245441168,E,original,full,Original published evaluation,,B,SI
+2.60.40.10,transformerdta,composite,cath_lso_test,Weak+,14709,0.694385613549,E,original,full,Original published evaluation,,B,SI
+3.10.200.10,transformerdta,composite,cath_lso_test,Weak+,95479,0.63378992885,E,original,full,Original published evaluation,,B,SI
+3.30.565.10,transformerdta,composite,cath_lso_test,Weak+,7882,0.590297850184,E,original,full,Original published evaluation,,B,SI
+3.40.190.10,transformerdta,composite,cath_lso_test,Weak+,2657,0.498007553879,E,original,full,Original published evaluation,,B,SI
+1.10.510.10,transformerdta,composite,validation,High,16433,0.97130174073,E,original,full,Original published evaluation,,B,SI
+1.10.565.10,transformerdta,composite,validation,High,20827,0.97232525061,E,original,full,Original published evaluation,,B,SI
+1.10.1300.10,transformerdta,composite,validation,High,21895,0.973204937992,E,original,full,Original published evaluation,,B,SI
+1.20.920.10,transformerdta,composite,validation,High,21185,0.967661578177,E,original,full,Original published evaluation,,B,SI
+2.40.10.10,transformerdta,composite,validation,High,20971,0.973517475345,E,original,full,Original published evaluation,,B,SI
+2.40.70.10,transformerdta,composite,validation,High,20070,0.968841922309,E,original,full,Original published evaluation,,B,SI
+2.60.40.10,transformerdta,composite,validation,High,21211,0.97194971947,E,original,full,Original published evaluation,,B,SI
+3.10.200.10,transformerdta,composite,validation,High,16332,0.962741892914,E,original,full,Original published evaluation,,B,SI
+3.30.565.10,transformerdta,composite,validation,High,21557,0.96992999027,E,original,full,Original published evaluation,,B,SI
+3.40.190.10,transformerdta,composite,validation,High,21811,0.971989291493,E,original,full,Original published evaluation,,B,SI
+1.10.510.10,transformerdta,composite,cath_lso_test,High,109519,0.607544087847,E,original,full,Original published evaluation,,B,SI
+1.10.565.10,transformerdta,composite,cath_lso_test,High,22467,0.563219294219,E,original,full,Original published evaluation,,B,SI
+1.10.1300.10,transformerdta,composite,cath_lso_test,High,1108,0.484531050537,E,original,full,Original published evaluation,,B,SI
+1.20.920.10,transformerdta,composite,cath_lso_test,High,13728,0.698124182091,E,original,full,Original published evaluation,,B,SI
+2.40.10.10,transformerdta,composite,cath_lso_test,High,18140,0.693473164911,E,original,full,Original published evaluation,,B,SI
+2.40.70.10,transformerdta,composite,cath_lso_test,High,36510,0.649977682388,E,original,full,Original published evaluation,,B,SI
+2.60.40.10,transformerdta,composite,cath_lso_test,High,14709,0.605526622938,E,original,full,Original published evaluation,,B,SI
+3.10.200.10,transformerdta,composite,cath_lso_test,High,95479,0.523524347371,E,original,full,Original published evaluation,,B,SI
+3.30.565.10,transformerdta,composite,cath_lso_test,High,7882,0.578528753423,E,original,full,Original published evaluation,,B,SI
+3.40.190.10,transformerdta,composite,cath_lso_test,High,2657,0.575495302141,E,original,full,Original published evaluation,,B,SI
+1.10.510.10,ligand_lookup,composite,validation,Weak+,16433,0.911542927009,F,original,full,Original published evaluation,,C,SI
+1.10.565.10,ligand_lookup,composite,validation,Weak+,20827,0.927542529597,F,original,full,Original published evaluation,,C,SI
+1.10.1300.10,ligand_lookup,composite,validation,Weak+,21895,0.923349563132,F,original,full,Original published evaluation,,C,SI
+1.20.920.10,ligand_lookup,composite,validation,Weak+,21185,0.923409512338,F,original,full,Original published evaluation,,C,SI
+2.40.10.10,ligand_lookup,composite,validation,Weak+,20971,0.926431419976,F,original,full,Original published evaluation,,C,SI
+2.40.70.10,ligand_lookup,composite,validation,Weak+,20070,0.922912339862,F,original,full,Original published evaluation,,C,SI
+2.60.40.10,ligand_lookup,composite,validation,Weak+,21211,0.922391968526,F,original,full,Original published evaluation,,C,SI
+3.10.200.10,ligand_lookup,composite,validation,Weak+,16332,0.914934384266,F,original,full,Original published evaluation,,C,SI
+3.30.565.10,ligand_lookup,composite,validation,Weak+,21557,0.915682157296,F,original,full,Original published evaluation,,C,SI
+3.40.190.10,ligand_lookup,composite,validation,Weak+,21811,0.921812509567,F,original,full,Original published evaluation,,C,SI
+1.10.510.10,ligand_lookup,composite,cath_lso_test,Weak+,109519,0.499843638073,F,original,full,Original published evaluation,,C,SI
+1.10.565.10,ligand_lookup,composite,cath_lso_test,Weak+,22467,0.5066887186,F,original,full,Original published evaluation,,C,SI
+1.10.1300.10,ligand_lookup,composite,cath_lso_test,Weak+,1108,0.513392857143,F,original,full,Original published evaluation,,C,SI
+1.20.920.10,ligand_lookup,composite,cath_lso_test,Weak+,13728,0.491592418942,F,original,full,Original published evaluation,,C,SI
+2.40.10.10,ligand_lookup,composite,cath_lso_test,Weak+,18140,0.512349441613,F,original,full,Original published evaluation,,C,SI
+2.40.70.10,ligand_lookup,composite,cath_lso_test,Weak+,36510,0.502948221829,F,original,full,Original published evaluation,,C,SI
+2.60.40.10,ligand_lookup,composite,cath_lso_test,Weak+,14709,0.46741214741,F,original,full,Original published evaluation,,C,SI
+3.10.200.10,ligand_lookup,composite,cath_lso_test,Weak+,95479,0.500725387098,F,original,full,Original published evaluation,,C,SI
+3.30.565.10,ligand_lookup,composite,cath_lso_test,Weak+,7882,0.51779582039,F,original,full,Original published evaluation,,C,SI
+3.40.190.10,ligand_lookup,composite,cath_lso_test,Weak+,2657,0.508982903695,F,original,full,Original published evaluation,,C,SI
+1.10.510.10,ligand_lookup,composite,validation,High,16433,0.938282464717,F,original,full,Original published evaluation,,C,SI
+1.10.565.10,ligand_lookup,composite,validation,High,20827,0.942273691687,F,original,full,Original published evaluation,,C,SI
+1.10.1300.10,ligand_lookup,composite,validation,High,21895,0.944727687596,F,original,full,Original published evaluation,,C,SI
+1.20.920.10,ligand_lookup,composite,validation,High,21185,0.940583369006,F,original,full,Original published evaluation,,C,SI
+2.40.10.10,ligand_lookup,composite,validation,High,20971,0.944251806292,F,original,full,Original published evaluation,,C,SI
+2.40.70.10,ligand_lookup,composite,validation,High,20070,0.937082384625,F,original,full,Original published evaluation,,C,SI
+2.60.40.10,ligand_lookup,composite,validation,High,21211,0.94246781151,F,original,full,Original published evaluation,,C,SI
+3.10.200.10,ligand_lookup,composite,validation,High,16332,0.933921660289,F,original,full,Original published evaluation,,C,SI
+3.30.565.10,ligand_lookup,composite,validation,High,21557,0.938840284985,F,original,full,Original published evaluation,,C,SI
+3.40.190.10,ligand_lookup,composite,validation,High,21811,0.94258332363,F,original,full,Original published evaluation,,C,SI
+1.10.510.10,ligand_lookup,composite,cath_lso_test,High,109519,0.516493181574,F,original,full,Original published evaluation,,C,SI
+1.10.565.10,ligand_lookup,composite,cath_lso_test,High,22467,0.503529146433,F,original,full,Original published evaluation,,C,SI
+1.10.1300.10,ligand_lookup,composite,cath_lso_test,High,1108,0.502835538752,F,original,full,Original published evaluation,,C,SI
+1.20.920.10,ligand_lookup,composite,cath_lso_test,High,13728,0.502328498706,F,original,full,Original published evaluation,,C,SI
+2.40.10.10,ligand_lookup,composite,cath_lso_test,High,18140,0.514664314794,F,original,full,Original published evaluation,,C,SI
+2.40.70.10,ligand_lookup,composite,cath_lso_test,High,36510,0.501459487308,F,original,full,Original published evaluation,,C,SI
+2.60.40.10,ligand_lookup,composite,cath_lso_test,High,14709,0.56281133992,F,original,full,Original published evaluation,,C,SI
+3.10.200.10,ligand_lookup,composite,cath_lso_test,High,95479,0.502717077416,F,original,full,Original published evaluation,,C,SI
+3.30.565.10,ligand_lookup,composite,cath_lso_test,High,7882,0.502670203842,F,original,full,Original published evaluation,,C,SI
+3.40.190.10,ligand_lookup,composite,cath_lso_test,High,2657,0.526078122764,F,original,full,Original published evaluation,,C,SI
+1.10.510.10,heavy_atom_count,composite,validation,Weak+,16433,0.686084372734,J,original,full,Training-only one-variable logistic regression,,D,SI
+1.10.565.10,heavy_atom_count,composite,validation,Weak+,20827,0.685807977428,J,original,full,Training-only one-variable logistic regression,,D,SI
+1.10.1300.10,heavy_atom_count,composite,validation,Weak+,21895,0.684698605088,J,original,full,Training-only one-variable logistic regression,,D,SI
+1.20.920.10,heavy_atom_count,composite,validation,Weak+,21185,0.692704360734,J,original,full,Training-only one-variable logistic regression,,D,SI
+2.40.10.10,heavy_atom_count,composite,validation,Weak+,20971,0.702005207419,J,original,full,Training-only one-variable logistic regression,,D,SI
+2.40.70.10,heavy_atom_count,composite,validation,Weak+,20070,0.679859897936,J,original,full,Training-only one-variable logistic regression,,D,SI
+2.60.40.10,heavy_atom_count,composite,validation,Weak+,21211,0.699427009309,J,original,full,Training-only one-variable logistic regression,,D,SI
+3.10.200.10,heavy_atom_count,composite,validation,Weak+,16332,0.706186686908,J,original,full,Training-only one-variable logistic regression,,D,SI
+3.30.565.10,heavy_atom_count,composite,validation,Weak+,21557,0.694226229589,J,original,full,Training-only one-variable logistic regression,,D,SI
+3.40.190.10,heavy_atom_count,composite,validation,Weak+,21811,0.681137247914,J,original,full,Training-only one-variable logistic regression,,D,SI
+1.10.510.10,heavy_atom_count,composite,cath_lso_test,Weak+,109519,0.729772260883,J,original,full,Training-only one-variable logistic regression,,D,SI
+1.10.565.10,heavy_atom_count,composite,cath_lso_test,Weak+,22467,0.656961404723,J,original,full,Training-only one-variable logistic regression,,D,SI
+1.10.1300.10,heavy_atom_count,composite,cath_lso_test,Weak+,1108,0.852476871773,J,original,full,Training-only one-variable logistic regression,,D,SI
+1.20.920.10,heavy_atom_count,composite,cath_lso_test,Weak+,13728,0.729485237578,J,original,full,Training-only one-variable logistic regression,,D,SI
+2.40.10.10,heavy_atom_count,composite,cath_lso_test,Weak+,18140,0.728999193657,J,original,full,Training-only one-variable logistic regression,,D,SI
+2.40.70.10,heavy_atom_count,composite,cath_lso_test,Weak+,36510,0.770886923067,J,original,full,Training-only one-variable logistic regression,,D,SI
+2.60.40.10,heavy_atom_count,composite,cath_lso_test,Weak+,14709,0.669385140678,J,original,full,Training-only one-variable logistic regression,,D,SI
+3.10.200.10,heavy_atom_count,composite,cath_lso_test,Weak+,95479,0.686011433438,J,original,full,Training-only one-variable logistic regression,,D,SI
+3.30.565.10,heavy_atom_count,composite,cath_lso_test,Weak+,7882,0.746728678339,J,original,full,Training-only one-variable logistic regression,,D,SI
+3.40.190.10,heavy_atom_count,composite,cath_lso_test,Weak+,2657,0.517485891714,J,original,full,Training-only one-variable logistic regression,,D,SI
+1.10.510.10,heavy_atom_count,composite,validation,High,16433,0.561467608342,J,original,full,Training-only one-variable logistic regression,,D,SI
+1.10.565.10,heavy_atom_count,composite,validation,High,20827,0.585274009492,J,original,full,Training-only one-variable logistic regression,,D,SI
+1.10.1300.10,heavy_atom_count,composite,validation,High,21895,0.583961419085,J,original,full,Training-only one-variable logistic regression,,D,SI
+1.20.920.10,heavy_atom_count,composite,validation,High,21185,0.579212255367,J,original,full,Training-only one-variable logistic regression,,D,SI
+2.40.10.10,heavy_atom_count,composite,validation,High,20971,0.579223506001,J,original,full,Training-only one-variable logistic regression,,D,SI
+2.40.70.10,heavy_atom_count,composite,validation,High,20070,0.590381999148,J,original,full,Training-only one-variable logistic regression,,D,SI
+2.60.40.10,heavy_atom_count,composite,validation,High,21211,0.586326646428,J,original,full,Training-only one-variable logistic regression,,D,SI
+3.10.200.10,heavy_atom_count,composite,validation,High,16332,0.630049152069,J,original,full,Training-only one-variable logistic regression,,D,SI
+3.30.565.10,heavy_atom_count,composite,validation,High,21557,0.586577561747,J,original,full,Training-only one-variable logistic regression,,D,SI
+3.40.190.10,heavy_atom_count,composite,validation,High,21811,0.588797312578,J,original,full,Training-only one-variable logistic regression,,D,SI
+1.10.510.10,heavy_atom_count,composite,cath_lso_test,High,109519,0.640942173876,J,original,full,Training-only one-variable logistic regression,,D,SI
+1.10.565.10,heavy_atom_count,composite,cath_lso_test,High,22467,0.577603974073,J,original,full,Training-only one-variable logistic regression,,D,SI
+1.10.1300.10,heavy_atom_count,composite,cath_lso_test,High,1108,0.710430603576,J,original,full,Training-only one-variable logistic regression,,D,SI
+1.20.920.10,heavy_atom_count,composite,cath_lso_test,High,13728,0.723462014379,J,original,full,Training-only one-variable logistic regression,,D,SI
+2.40.10.10,heavy_atom_count,composite,cath_lso_test,High,18140,0.679322848129,J,original,full,Training-only one-variable logistic regression,,D,SI
+2.40.70.10,heavy_atom_count,composite,cath_lso_test,High,36510,0.586614987489,J,original,full,Training-only one-variable logistic regression,,D,SI
+2.60.40.10,heavy_atom_count,composite,cath_lso_test,High,14709,0.596281186149,J,original,full,Training-only one-variable logistic regression,,D,SI
+3.10.200.10,heavy_atom_count,composite,cath_lso_test,High,95479,0.577055675778,J,original,full,Training-only one-variable logistic regression,,D,SI
+3.30.565.10,heavy_atom_count,composite,cath_lso_test,High,7882,0.627911167763,J,original,full,Training-only one-variable logistic regression,,D,SI
+3.40.190.10,heavy_atom_count,composite,cath_lso_test,High,2657,0.596842657509,J,original,full,Training-only one-variable logistic regression,,D,SI
+1.10.1300.10,deepdta,composite,validation,Weak+,21895,0.9419345943564088,,original,full,FP32 original,,E,
+1.10.1300.10,deepdta,composite,validation,Weak+,21895,0.9245757336307627,,intervened,full,Logit additive projection,,E,
+1.10.1300.10,deepdta,composite,validation,High,21895,0.9304038939269569,,original,full,FP32 original,,E,
+1.10.1300.10,deepdta,composite,validation,High,21895,0.8893404794219173,,intervened,full,Logit additive projection,,E,
+1.10.1300.10,deepdta,composite,cath_lso_test,Weak+,1108,0.7618957974756166,,original,full,FP32 original,,E,
+1.10.1300.10,deepdta,composite,cath_lso_test,Weak+,1108,0.7699189615605279,,intervened,full,Logit additive projection,,E,
+1.10.1300.10,deepdta,composite,cath_lso_test,High,1108,0.6107753737458822,,original,full,FP32 original,,E,
+1.10.1300.10,deepdta,composite,cath_lso_test,High,1108,0.6038865000930489,,intervened,full,Logit additive projection,,E,
+1.10.510.10,deepdta,composite,validation,Weak+,16433,0.9413449726518581,,original,full,FP32 original,,E,
+1.10.510.10,deepdta,composite,validation,Weak+,16433,0.9244217839236477,,intervened,full,Logit additive projection,,E,
+1.10.510.10,deepdta,composite,validation,High,16433,0.9366179646270021,,original,full,FP32 original,,E,
+1.10.510.10,deepdta,composite,validation,High,16433,0.9005598422755756,,intervened,full,Logit additive projection,,E,
+1.10.510.10,deepdta,composite,cath_lso_test,Weak+,109519,0.6551723600097252,,original,full,FP32 original,,E,
+1.10.510.10,deepdta,composite,cath_lso_test,Weak+,109519,0.6586609000353265,,intervened,full,Logit additive projection,,E,
+1.10.510.10,deepdta,composite,cath_lso_test,High,109519,0.6017994431741556,,original,full,FP32 original,,E,
+1.10.510.10,deepdta,composite,cath_lso_test,High,109519,0.6025315567306385,,intervened,full,Logit additive projection,,E,
+1.10.565.10,deepdta,composite,validation,Weak+,20827,0.9507187676916307,,original,full,FP32 original,,E,
+1.10.565.10,deepdta,composite,validation,Weak+,20827,0.9295843999549342,,intervened,full,Logit additive projection,,E,
+1.10.565.10,deepdta,composite,validation,High,20827,0.9412114520828306,,original,full,FP32 original,,E,
+1.10.565.10,deepdta,composite,validation,High,20827,0.899719158530638,,intervened,full,Logit additive projection,,E,
+1.10.565.10,deepdta,composite,cath_lso_test,Weak+,22467,0.6441917405874743,,original,full,FP32 original,,E,
+1.10.565.10,deepdta,composite,cath_lso_test,Weak+,22467,0.6585668836496347,,intervened,full,Logit additive projection,,E,
+1.10.565.10,deepdta,composite,cath_lso_test,High,22467,0.5716458837848879,,original,full,FP32 original,,E,
+1.10.565.10,deepdta,composite,cath_lso_test,High,22467,0.5782920750171623,,intervened,full,Logit additive projection,,E,
+1.20.920.10,deepdta,composite,validation,Weak+,21185,0.9574877111013773,,original,full,FP32 original,,E,
+1.20.920.10,deepdta,composite,validation,Weak+,21185,0.9362123911033242,,intervened,full,Logit additive projection,,E,
+1.20.920.10,deepdta,composite,validation,High,21185,0.9382025294622135,,original,full,FP32 original,,E,
+1.20.920.10,deepdta,composite,validation,High,21185,0.893550480598605,,intervened,full,Logit additive projection,,E,
+1.20.920.10,deepdta,composite,cath_lso_test,Weak+,13728,0.6490023290255578,,original,full,FP32 original,,E,
+1.20.920.10,deepdta,composite,cath_lso_test,Weak+,13728,0.6543182124089546,,intervened,full,Logit additive projection,,E,
+1.20.920.10,deepdta,composite,cath_lso_test,High,13728,0.6424307427539986,,original,full,FP32 original,,E,
+1.20.920.10,deepdta,composite,cath_lso_test,High,13728,0.6435184453895562,,intervened,full,Logit additive projection,,E,
+2.40.10.10,deepdta,composite,validation,Weak+,20971,0.9514035494052683,,original,full,FP32 original,,E,
+2.40.10.10,deepdta,composite,validation,Weak+,20971,0.9294404345917805,,intervened,full,Logit additive projection,,E,
+2.40.10.10,deepdta,composite,validation,High,20971,0.9332386712742525,,original,full,FP32 original,,E,
+2.40.10.10,deepdta,composite,validation,High,20971,0.8920866943451937,,intervened,full,Logit additive projection,,E,
+2.40.10.10,deepdta,composite,cath_lso_test,Weak+,18140,0.682610282886002,,original,full,FP32 original,,E,
+2.40.10.10,deepdta,composite,cath_lso_test,Weak+,18140,0.6883275531568089,,intervened,full,Logit additive projection,,E,
+2.40.10.10,deepdta,composite,cath_lso_test,High,18140,0.6416448293791116,,original,full,FP32 original,,E,
+2.40.10.10,deepdta,composite,cath_lso_test,High,18140,0.6517490969569246,,intervened,full,Logit additive projection,,E,
+2.40.70.10,deepdta,composite,validation,Weak+,20070,0.9455172799182973,,original,full,FP32 original,,E,
+2.40.70.10,deepdta,composite,validation,Weak+,20070,0.9291646995725383,,intervened,full,Logit additive projection,,E,
+2.40.70.10,deepdta,composite,validation,High,20070,0.9296134593877052,,original,full,FP32 original,,E,
+2.40.70.10,deepdta,composite,validation,High,20070,0.8929766096210419,,intervened,full,Logit additive projection,,E,
+2.40.70.10,deepdta,composite,cath_lso_test,Weak+,36510,0.7571820636699059,,original,full,FP32 original,,E,
+2.40.70.10,deepdta,composite,cath_lso_test,Weak+,36510,0.7711835161036996,,intervened,full,Logit additive projection,,E,
+2.40.70.10,deepdta,composite,cath_lso_test,High,36510,0.6258899381115591,,original,full,FP32 original,,E,
+2.40.70.10,deepdta,composite,cath_lso_test,High,36510,0.6279283643105549,,intervened,full,Logit additive projection,,E,
+2.60.40.10,deepdta,composite,validation,Weak+,21211,0.9488305610448093,,original,full,FP32 original,,E,
+2.60.40.10,deepdta,composite,validation,Weak+,21211,0.9325944620767828,,intervened,full,Logit additive projection,,E,
+2.60.40.10,deepdta,composite,validation,High,21211,0.9339845180159346,,original,full,FP32 original,,E,
+2.60.40.10,deepdta,composite,validation,High,21211,0.8944161200193392,,intervened,full,Logit additive projection,,E,
+2.60.40.10,deepdta,composite,cath_lso_test,Weak+,14709,0.6493451789262131,,original,full,FP32 original,,E,
+2.60.40.10,deepdta,composite,cath_lso_test,Weak+,14709,0.6456097715949277,,intervened,full,Logit additive projection,,E,
+2.60.40.10,deepdta,composite,cath_lso_test,High,14709,0.5475649736347126,,original,full,FP32 original,,E,
+2.60.40.10,deepdta,composite,cath_lso_test,High,14709,0.5506594206736164,,intervened,full,Logit additive projection,,E,
+3.10.200.10,deepdta,composite,validation,Weak+,16332,0.9354712482881911,,original,full,FP32 original,,E,
+3.10.200.10,deepdta,composite,validation,Weak+,16332,0.919930991395836,,intervened,full,Logit additive projection,,E,
+3.10.200.10,deepdta,composite,validation,High,16332,0.9236979004580426,,original,full,FP32 original,,E,
+3.10.200.10,deepdta,composite,validation,High,16332,0.8863146093422164,,intervened,full,Logit additive projection,,E,
+3.10.200.10,deepdta,composite,cath_lso_test,Weak+,95479,0.6279383179436365,,original,full,FP32 original,,E,
+3.10.200.10,deepdta,composite,cath_lso_test,Weak+,95479,0.6325048946314555,,intervened,full,Logit additive projection,,E,
+3.10.200.10,deepdta,composite,cath_lso_test,High,95479,0.5513262624641855,,original,full,FP32 original,,E,
+3.10.200.10,deepdta,composite,cath_lso_test,High,95479,0.5487387705193928,,intervened,full,Logit additive projection,,E,
+3.30.565.10,deepdta,composite,validation,Weak+,21557,0.947876018501941,,original,full,FP32 original,,E,
+3.30.565.10,deepdta,composite,validation,Weak+,21557,0.9284490132039199,,intervened,full,Logit additive projection,,E,
+3.30.565.10,deepdta,composite,validation,High,21557,0.9403445261584997,,original,full,FP32 original,,E,
+3.30.565.10,deepdta,composite,validation,High,21557,0.8900885659095489,,intervened,full,Logit additive projection,,E,
+3.30.565.10,deepdta,composite,cath_lso_test,Weak+,7882,0.6434622987856538,,original,full,FP32 original,,E,
+3.30.565.10,deepdta,composite,cath_lso_test,Weak+,7882,0.6602779935046597,,intervened,full,Logit additive projection,,E,
+3.30.565.10,deepdta,composite,cath_lso_test,High,7882,0.5222044852598502,,original,full,FP32 original,,E,
+3.30.565.10,deepdta,composite,cath_lso_test,High,7882,0.520744132007305,,intervened,full,Logit additive projection,,E,
+3.40.190.10,deepdta,composite,validation,Weak+,21811,0.943731279857984,,original,full,FP32 original,,E,
+3.40.190.10,deepdta,composite,validation,Weak+,21811,0.9251486987573595,,intervened,full,Logit additive projection,,E,
+3.40.190.10,deepdta,composite,validation,High,21811,0.9229921725991728,,original,full,FP32 original,,E,
+3.40.190.10,deepdta,composite,validation,High,21811,0.8930348935798939,,intervened,full,Logit additive projection,,E,
+3.40.190.10,deepdta,composite,cath_lso_test,Weak+,2657,0.5086865711990809,,original,full,FP32 original,,E,
+3.40.190.10,deepdta,composite,cath_lso_test,Weak+,2657,0.5275439754823852,,intervened,full,Logit additive projection,,E,
+3.40.190.10,deepdta,composite,cath_lso_test,High,2657,0.5914570515572088,,original,full,FP32 original,,E,
+3.40.190.10,deepdta,composite,cath_lso_test,High,2657,0.6057795583536032,,intervened,full,Logit additive projection,,E,
+1.10.1300.10,transformerdta,composite,validation,Weak+,21895,0.9732704595478845,,original,full,FP32 original,,F,
+1.10.1300.10,transformerdta,composite,validation,Weak+,21895,0.9610964757362376,,intervened,full,Logit additive projection,,F,
+1.10.1300.10,transformerdta,composite,validation,High,21895,0.9730925036776241,,original,full,FP32 original,,F,
+1.10.1300.10,transformerdta,composite,validation,High,21895,0.9597416652463926,,intervened,full,Logit additive projection,,F,
+1.10.1300.10,transformerdta,composite,cath_lso_test,Weak+,1108,0.5757494262765347,,original,full,FP32 original,,F,
+1.10.1300.10,transformerdta,composite,cath_lso_test,Weak+,1108,0.5632261187607573,,intervened,full,Logit additive projection,,F,
+1.10.1300.10,transformerdta,composite,cath_lso_test,High,1108,0.4875069786575511,,original,full,FP32 original,,F,
+1.10.1300.10,transformerdta,composite,cath_lso_test,High,1108,0.5025090518493851,,intervened,full,Logit additive projection,,F,
+1.10.510.10,transformerdta,composite,validation,Weak+,16433,0.9651756307106072,,original,full,FP32 original,,F,
+1.10.510.10,transformerdta,composite,validation,Weak+,16433,0.9531817350014927,,intervened,full,Logit additive projection,,F,
+1.10.510.10,transformerdta,composite,validation,High,16433,0.9712084015760587,,original,full,FP32 original,,F,
+1.10.510.10,transformerdta,composite,validation,High,16433,0.9607146710152323,,intervened,full,Logit additive projection,,F,
+1.10.510.10,transformerdta,composite,cath_lso_test,Weak+,109519,0.6552052521578462,,original,full,FP32 original,,F,
+1.10.510.10,transformerdta,composite,cath_lso_test,Weak+,109519,0.6724928691187526,,intervened,full,Logit additive projection,,F,
+1.10.510.10,transformerdta,composite,cath_lso_test,High,109519,0.6079862635684459,,original,full,FP32 original,,F,
+1.10.510.10,transformerdta,composite,cath_lso_test,High,109519,0.6162416204983368,,intervened,full,Logit additive projection,,F,
+1.10.565.10,transformerdta,composite,validation,Weak+,20827,0.9716837993676277,,original,full,FP32 original,,F,
+1.10.565.10,transformerdta,composite,validation,Weak+,20827,0.959464256728412,,intervened,full,Logit additive projection,,F,
+1.10.565.10,transformerdta,composite,validation,High,20827,0.9722628193635638,,original,full,FP32 original,,F,
+1.10.565.10,transformerdta,composite,validation,High,20827,0.9580153439118307,,intervened,full,Logit additive projection,,F,
+1.10.565.10,transformerdta,composite,cath_lso_test,Weak+,22467,0.678078987029888,,original,full,FP32 original,,F,
+1.10.565.10,transformerdta,composite,cath_lso_test,Weak+,22467,0.6877663528086477,,intervened,full,Logit additive projection,,F,
+1.10.565.10,transformerdta,composite,cath_lso_test,High,22467,0.5621031549155784,,original,full,FP32 original,,F,
+1.10.565.10,transformerdta,composite,cath_lso_test,High,22467,0.5630714836231621,,intervened,full,Logit additive projection,,F,
+1.20.920.10,transformerdta,composite,validation,Weak+,21185,0.9705001216722636,,original,full,FP32 original,,F,
+1.20.920.10,transformerdta,composite,validation,Weak+,21185,0.9604288947291576,,intervened,full,Logit additive projection,,F,
+1.20.920.10,transformerdta,composite,validation,High,21185,0.9676329970657735,,original,full,FP32 original,,F,
+1.20.920.10,transformerdta,composite,validation,High,21185,0.9548414342953684,,intervened,full,Logit additive projection,,F,
+1.20.920.10,transformerdta,composite,cath_lso_test,Weak+,13728,0.6565165040868463,,original,full,FP32 original,,F,
+1.20.920.10,transformerdta,composite,cath_lso_test,Weak+,13728,0.6632683291575803,,intervened,full,Logit additive projection,,F,
+1.20.920.10,transformerdta,composite,cath_lso_test,High,13728,0.6982249438552098,,original,full,FP32 original,,F,
+1.20.920.10,transformerdta,composite,cath_lso_test,High,13728,0.6995596936766536,,intervened,full,Logit additive projection,,F,
+2.40.10.10,transformerdta,composite,validation,Weak+,20971,0.9702033084129458,,original,full,FP32 original,,F,
+2.40.10.10,transformerdta,composite,validation,Weak+,20971,0.9584306664449629,,intervened,full,Logit additive projection,,F,
+2.40.10.10,transformerdta,composite,validation,High,20971,0.9735139643349366,,original,full,FP32 original,,F,
+2.40.10.10,transformerdta,composite,validation,High,20971,0.9609500041377168,,intervened,full,Logit additive projection,,F,
+2.40.10.10,transformerdta,composite,cath_lso_test,Weak+,18140,0.7139373793928541,,original,full,FP32 original,,F,
+2.40.10.10,transformerdta,composite,cath_lso_test,Weak+,18140,0.7166590387550429,,intervened,full,Logit additive projection,,F,
+2.40.10.10,transformerdta,composite,cath_lso_test,High,18140,0.6932136252712703,,original,full,FP32 original,,F,
+2.40.10.10,transformerdta,composite,cath_lso_test,High,18140,0.6945216440292621,,intervened,full,Logit additive projection,,F,
+2.40.70.10,transformerdta,composite,validation,Weak+,20070,0.968142016167105,,original,full,FP32 original,,F,
+2.40.70.10,transformerdta,composite,validation,Weak+,20070,0.9559991136032989,,intervened,full,Logit additive projection,,F,
+2.40.70.10,transformerdta,composite,validation,High,20070,0.9688536662765947,,original,full,FP32 original,,F,
+2.40.70.10,transformerdta,composite,validation,High,20070,0.954184829635844,,intervened,full,Logit additive projection,,F,
+2.40.70.10,transformerdta,composite,cath_lso_test,Weak+,36510,0.7160737968564306,,original,full,FP32 original,,F,
+2.40.70.10,transformerdta,composite,cath_lso_test,Weak+,36510,0.7226857605861386,,intervened,full,Logit additive projection,,F,
+2.40.70.10,transformerdta,composite,cath_lso_test,High,36510,0.649680569131479,,original,full,FP32 original,,F,
+2.40.70.10,transformerdta,composite,cath_lso_test,High,36510,0.6555392450699248,,intervened,full,Logit additive projection,,F,
+2.60.40.10,transformerdta,composite,validation,Weak+,21211,0.9693299282260296,,original,full,FP32 original,,F,
+2.60.40.10,transformerdta,composite,validation,Weak+,21211,0.9569383196464598,,intervened,full,Logit additive projection,,F,
+2.60.40.10,transformerdta,composite,validation,High,21211,0.9719508174771379,,original,full,FP32 original,,F,
+2.60.40.10,transformerdta,composite,validation,High,21211,0.9569837852409044,,intervened,full,Logit additive projection,,F,
+2.60.40.10,transformerdta,composite,cath_lso_test,Weak+,14709,0.7074960375226542,,original,full,FP32 original,,F,
+2.60.40.10,transformerdta,composite,cath_lso_test,Weak+,14709,0.7043560347643917,,intervened,full,Logit additive projection,,F,
+2.60.40.10,transformerdta,composite,cath_lso_test,High,14709,0.604988559159447,,original,full,FP32 original,,F,
+2.60.40.10,transformerdta,composite,cath_lso_test,High,14709,0.6164463745083614,,intervened,full,Logit additive projection,,F,
+3.10.200.10,transformerdta,composite,validation,Weak+,16332,0.9604788822931238,,original,full,FP32 original,,F,
+3.10.200.10,transformerdta,composite,validation,Weak+,16332,0.9492933668340225,,intervened,full,Logit additive projection,,F,
+3.10.200.10,transformerdta,composite,validation,High,16332,0.9627989120542689,,original,full,FP32 original,,F,
+3.10.200.10,transformerdta,composite,validation,High,16332,0.9502033189667638,,intervened,full,Logit additive projection,,F,
+3.10.200.10,transformerdta,composite,cath_lso_test,Weak+,95479,0.6336689221446863,,original,full,FP32 original,,F,
+3.10.200.10,transformerdta,composite,cath_lso_test,Weak+,95479,0.6309582367893666,,intervened,full,Logit additive projection,,F,
+3.10.200.10,transformerdta,composite,cath_lso_test,High,95479,0.5233641852645786,,original,full,FP32 original,,F,
+3.10.200.10,transformerdta,composite,cath_lso_test,High,95479,0.523633345153107,,intervened,full,Logit additive projection,,F,
+3.30.565.10,transformerdta,composite,validation,Weak+,21557,0.9647492525222199,,original,full,FP32 original,,F,
+3.30.565.10,transformerdta,composite,validation,Weak+,21557,0.9544586989923101,,intervened,full,Logit additive projection,,F,
+3.30.565.10,transformerdta,composite,validation,High,21557,0.9699761358324275,,original,full,FP32 original,,F,
+3.30.565.10,transformerdta,composite,validation,High,21557,0.9560486890167158,,intervened,full,Logit additive projection,,F,
+3.30.565.10,transformerdta,composite,cath_lso_test,Weak+,7882,0.589104243151652,,original,full,FP32 original,,F,
+3.30.565.10,transformerdta,composite,cath_lso_test,Weak+,7882,0.5934040525275346,,intervened,full,Logit additive projection,,F,
+3.30.565.10,transformerdta,composite,cath_lso_test,High,7882,0.5787341140902468,,original,full,FP32 original,,F,
+3.30.565.10,transformerdta,composite,cath_lso_test,High,7882,0.5814383193216053,,intervened,full,Logit additive projection,,F,
+3.40.190.10,transformerdta,composite,validation,Weak+,21811,0.9697472680872842,,original,full,FP32 original,,F,
+3.40.190.10,transformerdta,composite,validation,Weak+,21811,0.9575098070126138,,intervened,full,Logit additive projection,,F,
+3.40.190.10,transformerdta,composite,validation,High,21811,0.9720279044639756,,original,full,FP32 original,,F,
+3.40.190.10,transformerdta,composite,validation,High,21811,0.9572180810819919,,intervened,full,Logit additive projection,,F,
+3.40.190.10,transformerdta,composite,cath_lso_test,Weak+,2657,0.4969041052448252,,original,full,FP32 original,,F,
+3.40.190.10,transformerdta,composite,cath_lso_test,Weak+,2657,0.5015193538911835,,intervened,full,Logit additive projection,,F,
+3.40.190.10,transformerdta,composite,cath_lso_test,High,2657,0.5747031048790957,,original,full,FP32 original,,F,
+3.40.190.10,transformerdta,composite,cath_lso_test,High,2657,0.567357275718987,,intervened,full,Logit additive projection,,F,
